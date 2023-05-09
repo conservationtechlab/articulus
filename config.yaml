@@ -1,0 +1,74 @@
+    # Project definitions (do not edit)
+Task: Hyaline
+scorer: KSwanson
+date: Apr19
+multianimalproject: false
+identity:
+
+# !!!
+# CHANGE THIS PATH TO REFLECT GITHUB REPOSITORY LOCATION
+project_path: C:\Users\CTL\articulus 
+
+    # Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  # removed for distribution
+  
+bodyparts:
+- head
+- trunk
+- leftshoulder
+- leftelbow
+- leftwrist
+- leftforefoot
+- rightshoulder
+- rightelbow
+- rightwrist
+- rightforefoot
+- lefthip
+- leftknee
+- leftankle
+- lefthindfoot
+- righthip
+- rightknee
+- rightankle
+- righthindfoot
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+start: 0
+stop: 1
+numframes2pick: 20
+
+    # Plotting configuration
+skeleton:
+- - trunk
+  - head
+
+skeleton_color: black
+pcutoff: 0.6
+dotsize: 7
+alphavalue: 0.7
+colormap: rainbow
+
+    # Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: resnet_50
+default_augmenter: default
+snapshotindex: -1
+batch_size: 64
+
+    # Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+    #if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+    # Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true
+croppedtraining:
