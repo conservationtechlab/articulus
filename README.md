@@ -19,8 +19,11 @@ If the .ipynb is opened through Google Collab, however, it is not necessary to i
 
 ## Step 1: Create Pose Estimations
 
-1. Install DeepLabCut
-2. Download the articulus repository
+1. Install DeepLabCut and download the articulus repository
+2. Update line 10 in the config file to reflect local repository location
+```
+10| project_path: C:\Users\CTL\articulus 
+```
 3. Open the DeepLabCut gui by running in the command line:
 ```bash
 > python -m deeplabcut 
@@ -47,4 +50,4 @@ You can then invert the dot product formula to get the angle between the two vec
 
 Using the .csv files outputed by Step 1, get visual representation of the mobility of each joint from the ipynb notebook. 
 
-1. 
+
