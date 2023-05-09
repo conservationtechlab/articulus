@@ -1,0 +1,2117 @@
+2023-01-24 08:12:31 Config:
+{'all_joints': [[0],
+                [1],
+                [2],
+                [3],
+                [4],
+                [5],
+                [6],
+                [7],
+                [8],
+                [9],
+                [10],
+                [11],
+                [12],
+                [13],
+                [14],
+                [15],
+                [16],
+                [17]],
+ 'all_joints_names': ['head',
+                      'trunk',
+                      'leftshoulder',
+                      'leftelbow',
+                      'leftwrist',
+                      'leftforefoot',
+                      'rightshoulder',
+                      'rightelbow',
+                      'rightwrist',
+                      'rightforefoot',
+                      'lefthip',
+                      'leftknee',
+                      'leftankle',
+                      'lefthindfoot',
+                      'righthip',
+                      'rightknee',
+                      'rightankle',
+                      'righthindfoot'],
+ 'alpha_r': 0.02,
+ 'apply_prob': 0.5,
+ 'batch_size': 1,
+ 'clahe': True,
+ 'claheratio': 0.1,
+ 'crop_pad': 0,
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_HyalineApr19\\Hyaline_KSwanson95shuffle1.mat',
+ 'dataset_type': 'imgaug',
+ 'decay_steps': 30000,
+ 'deterministic': False,
+ 'display_iters': 1000,
+ 'edge': False,
+ 'emboss': {'alpha': [0.0, 1.0], 'embossratio': 0.1, 'strength': [0.5, 1.5]},
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'histeq': True,
+ 'histeqratio': 0.1,
+ 'init_weights': 'C:\\Users\\Kyra\\anaconda3\\envs\\deeplabcut\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'lr_init': 0.0005,
+ 'max_input_size': 1500,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_HyalineApr19\\Documentation_data-Hyaline_95shuffle1.pickle',
+ 'min_input_size': 64,
+ 'mirror': False,
+ 'multi_stage': False,
+ 'multi_step': [[0.005, 10000],
+                [0.02, 430000],
+                [0.002, 730000],
+                [0.001, 1030000]],
+ 'net_type': 'resnet_50',
+ 'num_joints': 18,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': False,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'pos_dist_thresh': 17,
+ 'project_path': 'C:\\Users\\Kyra\\OneDrive\\Desktop\\Hyaline',
+ 'regularize': False,
+ 'rotation': 25,
+ 'rotratio': 0.4,
+ 'save_iters': 50000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'sharpen': False,
+ 'sharpenratio': 0.3,
+ 'shuffle': True,
+ 'snapshot_prefix': 'C:\\Users\\Kyra\\OneDrive\\Desktop\\Hyaline\\dlc-models\\iteration-0\\HyalineApr19-trainset95shuffle1\\train\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2023-01-24 08:15:24 iteration: 1000 loss: 0.0248 lr: 0.005
+2023-01-24 08:17:40 iteration: 2000 loss: 0.0143 lr: 0.005
+2023-01-24 08:19:55 iteration: 3000 loss: 0.0121 lr: 0.005
+2023-01-24 08:22:14 iteration: 4000 loss: 0.0113 lr: 0.005
+2023-01-24 08:24:34 iteration: 5000 loss: 0.0105 lr: 0.005
+2023-01-24 08:26:56 iteration: 6000 loss: 0.0098 lr: 0.005
+2023-01-24 08:29:18 iteration: 7000 loss: 0.0092 lr: 0.005
+2023-01-24 08:31:37 iteration: 8000 loss: 0.0089 lr: 0.005
+2023-01-24 08:34:00 iteration: 9000 loss: 0.0085 lr: 0.005
+2023-01-24 08:36:20 iteration: 10000 loss: 0.0081 lr: 0.005
+2023-01-24 08:38:41 iteration: 11000 loss: 0.0091 lr: 0.02
+2023-01-24 08:41:03 iteration: 12000 loss: 0.0080 lr: 0.02
+2023-01-24 08:43:26 iteration: 13000 loss: 0.0074 lr: 0.02
+2023-01-24 08:45:48 iteration: 14000 loss: 0.0069 lr: 0.02
+2023-01-24 08:48:12 iteration: 15000 loss: 0.0067 lr: 0.02
+2023-01-24 08:50:34 iteration: 16000 loss: 0.0061 lr: 0.02
+2023-01-24 08:52:59 iteration: 17000 loss: 0.0060 lr: 0.02
+2023-01-24 08:55:21 iteration: 18000 loss: 0.0056 lr: 0.02
+2023-01-24 08:57:44 iteration: 19000 loss: 0.0056 lr: 0.02
+2023-01-24 09:00:09 iteration: 20000 loss: 0.0053 lr: 0.02
+2023-01-24 09:02:30 iteration: 21000 loss: 0.0050 lr: 0.02
+2023-01-24 09:04:55 iteration: 22000 loss: 0.0050 lr: 0.02
+2023-01-24 09:07:18 iteration: 23000 loss: 0.0048 lr: 0.02
+2023-01-24 09:09:41 iteration: 24000 loss: 0.0048 lr: 0.02
+2023-01-24 09:12:03 iteration: 25000 loss: 0.0047 lr: 0.02
+2023-01-24 09:14:26 iteration: 26000 loss: 0.0044 lr: 0.02
+2023-01-24 09:16:49 iteration: 27000 loss: 0.0045 lr: 0.02
+2023-01-24 09:19:12 iteration: 28000 loss: 0.0044 lr: 0.02
+2023-01-24 09:21:38 iteration: 29000 loss: 0.0044 lr: 0.02
+2023-01-24 09:24:02 iteration: 30000 loss: 0.0043 lr: 0.02
+2023-01-24 09:26:27 iteration: 31000 loss: 0.0041 lr: 0.02
+2023-01-24 09:28:52 iteration: 32000 loss: 0.0042 lr: 0.02
+2023-01-24 09:31:19 iteration: 33000 loss: 0.0040 lr: 0.02
+2023-01-24 09:33:45 iteration: 34000 loss: 0.0040 lr: 0.02
+2023-01-24 19:31:13 iteration: 35000 loss: 0.0039 lr: 0.02
+2023-01-24 19:33:50 iteration: 36000 loss: 0.0039 lr: 0.02
+2023-01-24 19:36:23 iteration: 37000 loss: 0.0037 lr: 0.02
+2023-01-24 19:38:56 iteration: 38000 loss: 0.0037 lr: 0.02
+2023-01-24 19:41:36 iteration: 39000 loss: 0.0037 lr: 0.02
+2023-01-24 19:47:35 Config:
+{'all_joints': [[0],
+                [1],
+                [2],
+                [3],
+                [4],
+                [5],
+                [6],
+                [7],
+                [8],
+                [9],
+                [10],
+                [11],
+                [12],
+                [13],
+                [14],
+                [15],
+                [16],
+                [17]],
+ 'all_joints_names': ['head',
+                      'trunk',
+                      'leftshoulder',
+                      'leftelbow',
+                      'leftwrist',
+                      'leftforefoot',
+                      'rightshoulder',
+                      'rightelbow',
+                      'rightwrist',
+                      'rightforefoot',
+                      'lefthip',
+                      'leftknee',
+                      'leftankle',
+                      'lefthindfoot',
+                      'righthip',
+                      'rightknee',
+                      'rightankle',
+                      'righthindfoot'],
+ 'alpha_r': 0.02,
+ 'apply_prob': 0.5,
+ 'batch_size': 1,
+ 'clahe': True,
+ 'claheratio': 0.1,
+ 'crop_pad': 0,
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_HyalineApr19\\Hyaline_KSwanson95shuffle1.mat',
+ 'dataset_type': 'imgaug',
+ 'decay_steps': 30000,
+ 'deterministic': False,
+ 'display_iters': 1000,
+ 'edge': False,
+ 'emboss': {'alpha': [0.0, 1.0], 'embossratio': 0.1, 'strength': [0.5, 1.5]},
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'histeq': True,
+ 'histeqratio': 0.1,
+ 'init_weights': 'C:\\Users\\Kyra\\anaconda3\\envs\\deeplabcut\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'lr_init': 0.0005,
+ 'max_input_size': 1500,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_HyalineApr19\\Documentation_data-Hyaline_95shuffle1.pickle',
+ 'min_input_size': 64,
+ 'mirror': False,
+ 'multi_stage': False,
+ 'multi_step': [[0.005, 10000],
+                [0.02, 430000],
+                [0.002, 730000],
+                [0.001, 1030000]],
+ 'net_type': 'resnet_50',
+ 'num_joints': 18,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': False,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'pos_dist_thresh': 17,
+ 'project_path': 'C:\\Users\\Kyra\\OneDrive\\Desktop\\Hyaline',
+ 'regularize': False,
+ 'rotation': 25,
+ 'rotratio': 0.4,
+ 'save_iters': 50000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'sharpen': False,
+ 'sharpenratio': 0.3,
+ 'shuffle': True,
+ 'snapshot_prefix': 'C:\\Users\\Kyra\\OneDrive\\Desktop\\Hyaline\\dlc-models\\iteration-0\\HyalineApr19-trainset95shuffle1\\train\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2023-01-24 19:52:06 Config:
+{'all_joints': [[0],
+                [1],
+                [2],
+                [3],
+                [4],
+                [5],
+                [6],
+                [7],
+                [8],
+                [9],
+                [10],
+                [11],
+                [12],
+                [13],
+                [14],
+                [15],
+                [16],
+                [17]],
+ 'all_joints_names': ['head',
+                      'trunk',
+                      'leftshoulder',
+                      'leftelbow',
+                      'leftwrist',
+                      'leftforefoot',
+                      'rightshoulder',
+                      'rightelbow',
+                      'rightwrist',
+                      'rightforefoot',
+                      'lefthip',
+                      'leftknee',
+                      'leftankle',
+                      'lefthindfoot',
+                      'righthip',
+                      'rightknee',
+                      'rightankle',
+                      'righthindfoot'],
+ 'alpha_r': 0.02,
+ 'apply_prob': 0.5,
+ 'batch_size': 1,
+ 'clahe': True,
+ 'claheratio': 0.1,
+ 'crop_pad': 0,
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_HyalineApr19\\Hyaline_KSwanson95shuffle1.mat',
+ 'dataset_type': 'imgaug',
+ 'decay_steps': 30000,
+ 'deterministic': False,
+ 'display_iters': 1000,
+ 'edge': False,
+ 'emboss': {'alpha': [0.0, 1.0], 'embossratio': 0.1, 'strength': [0.5, 1.5]},
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'histeq': True,
+ 'histeqratio': 0.1,
+ 'init_weights': 'C:\\Users\\Kyra\\anaconda3\\envs\\deeplabcut\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'lr_init': 0.0005,
+ 'max_input_size': 1500,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_HyalineApr19\\Documentation_data-Hyaline_95shuffle1.pickle',
+ 'min_input_size': 64,
+ 'mirror': False,
+ 'multi_stage': False,
+ 'multi_step': [[0.005, 10000],
+                [0.02, 430000],
+                [0.002, 730000],
+                [0.001, 1030000]],
+ 'net_type': 'resnet_50',
+ 'num_joints': 18,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': False,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'pos_dist_thresh': 17,
+ 'project_path': 'C:\\Users\\Kyra\\OneDrive\\Desktop\\Hyaline',
+ 'regularize': False,
+ 'rotation': 25,
+ 'rotratio': 0.4,
+ 'save_iters': 50000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'sharpen': False,
+ 'sharpenratio': 0.3,
+ 'shuffle': True,
+ 'snapshot_prefix': 'C:\\Users\\Kyra\\OneDrive\\Desktop\\Hyaline\\dlc-models\\iteration-0\\HyalineApr19-trainset95shuffle1\\train\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2023-01-24 19:54:35 iteration: 1000 loss: 0.0246 lr: 0.005
+2023-01-24 19:56:49 iteration: 2000 loss: 0.0140 lr: 0.005
+2023-01-24 19:59:01 iteration: 3000 loss: 0.0121 lr: 0.005
+2023-01-24 20:01:14 iteration: 4000 loss: 0.0106 lr: 0.005
+2023-01-24 20:03:28 iteration: 5000 loss: 0.0100 lr: 0.005
+2023-01-24 20:05:43 iteration: 6000 loss: 0.0093 lr: 0.005
+2023-01-24 20:07:58 iteration: 7000 loss: 0.0086 lr: 0.005
+2023-01-24 20:10:13 iteration: 8000 loss: 0.0083 lr: 0.005
+2023-01-24 20:12:28 iteration: 9000 loss: 0.0080 lr: 0.005
+2023-01-24 20:14:43 iteration: 10000 loss: 0.0075 lr: 0.005
+2023-01-24 20:16:58 iteration: 11000 loss: 0.0084 lr: 0.02
+2023-01-24 20:19:16 iteration: 12000 loss: 0.0076 lr: 0.02
+2023-01-24 20:21:32 iteration: 13000 loss: 0.0068 lr: 0.02
+2023-01-24 20:23:48 iteration: 14000 loss: 0.0065 lr: 0.02
+2023-01-24 20:26:02 iteration: 15000 loss: 0.0063 lr: 0.02
+2023-01-24 20:28:19 iteration: 16000 loss: 0.0059 lr: 0.02
+2023-01-24 20:30:37 iteration: 17000 loss: 0.0058 lr: 0.02
+2023-01-24 20:32:54 iteration: 18000 loss: 0.0055 lr: 0.02
+2023-01-24 20:35:08 iteration: 19000 loss: 0.0053 lr: 0.02
+2023-01-24 20:37:20 iteration: 20000 loss: 0.0051 lr: 0.02
+2023-01-24 20:39:37 iteration: 21000 loss: 0.0049 lr: 0.02
+2023-01-24 20:41:51 iteration: 22000 loss: 0.0048 lr: 0.02
+2023-01-24 20:44:08 iteration: 23000 loss: 0.0048 lr: 0.02
+2023-01-24 20:46:24 iteration: 24000 loss: 0.0046 lr: 0.02
+2023-01-24 20:48:39 iteration: 25000 loss: 0.0045 lr: 0.02
+2023-01-24 20:50:53 iteration: 26000 loss: 0.0044 lr: 0.02
+2023-01-24 20:53:08 iteration: 27000 loss: 0.0045 lr: 0.02
+2023-01-24 20:55:25 iteration: 28000 loss: 0.0042 lr: 0.02
+2023-01-24 20:57:44 iteration: 29000 loss: 0.0043 lr: 0.02
+2023-01-24 21:00:02 iteration: 30000 loss: 0.0043 lr: 0.02
+2023-01-24 21:02:20 iteration: 31000 loss: 0.0041 lr: 0.02
+2023-01-24 21:04:37 iteration: 32000 loss: 0.0040 lr: 0.02
+2023-01-24 21:06:54 iteration: 33000 loss: 0.0039 lr: 0.02
+2023-01-24 21:09:10 iteration: 34000 loss: 0.0040 lr: 0.02
+2023-01-24 21:11:27 iteration: 35000 loss: 0.0038 lr: 0.02
+2023-01-24 21:13:43 iteration: 36000 loss: 0.0037 lr: 0.02
+2023-01-24 21:16:00 iteration: 37000 loss: 0.0037 lr: 0.02
+2023-01-24 21:18:17 iteration: 38000 loss: 0.0036 lr: 0.02
+2023-01-24 21:20:35 iteration: 39000 loss: 0.0037 lr: 0.02
+2023-01-24 21:22:53 iteration: 40000 loss: 0.0036 lr: 0.02
+2023-01-24 21:25:10 iteration: 41000 loss: 0.0036 lr: 0.02
+2023-01-24 21:27:27 iteration: 42000 loss: 0.0035 lr: 0.02
+2023-01-24 21:29:43 iteration: 43000 loss: 0.0034 lr: 0.02
+2023-01-24 21:31:59 iteration: 44000 loss: 0.0035 lr: 0.02
+2023-01-24 21:34:16 iteration: 45000 loss: 0.0035 lr: 0.02
+2023-01-24 21:36:34 iteration: 46000 loss: 0.0034 lr: 0.02
+2023-01-24 21:38:49 iteration: 47000 loss: 0.0034 lr: 0.02
+2023-01-24 21:41:08 iteration: 48000 loss: 0.0034 lr: 0.02
+2023-01-24 21:43:23 iteration: 49000 loss: 0.0032 lr: 0.02
+2023-01-24 21:45:38 iteration: 50000 loss: 0.0032 lr: 0.02
+2023-01-24 21:47:54 iteration: 51000 loss: 0.0033 lr: 0.02
+2023-01-24 21:50:07 iteration: 52000 loss: 0.0031 lr: 0.02
+2023-01-24 21:52:22 iteration: 53000 loss: 0.0031 lr: 0.02
+2023-01-24 21:54:36 iteration: 54000 loss: 0.0030 lr: 0.02
+2023-01-24 21:56:51 iteration: 55000 loss: 0.0031 lr: 0.02
+2023-01-24 21:59:04 iteration: 56000 loss: 0.0030 lr: 0.02
+2023-01-24 22:01:19 iteration: 57000 loss: 0.0031 lr: 0.02
+2023-01-24 22:03:34 iteration: 58000 loss: 0.0030 lr: 0.02
+2023-01-24 22:05:50 iteration: 59000 loss: 0.0030 lr: 0.02
+2023-01-24 22:08:06 iteration: 60000 loss: 0.0030 lr: 0.02
+2023-01-24 22:10:21 iteration: 61000 loss: 0.0031 lr: 0.02
+2023-01-24 22:12:37 iteration: 62000 loss: 0.0030 lr: 0.02
+2023-01-24 22:14:51 iteration: 63000 loss: 0.0029 lr: 0.02
+2023-01-24 22:17:07 iteration: 64000 loss: 0.0029 lr: 0.02
+2023-01-24 22:19:22 iteration: 65000 loss: 0.0028 lr: 0.02
+2023-01-25 18:49:04 iteration: 66000 loss: 0.0029 lr: 0.02
+2023-01-25 19:01:43 iteration: 67000 loss: 0.0028 lr: 0.02
+2023-01-25 19:35:22 iteration: 68000 loss: 0.0028 lr: 0.02
+2023-01-25 19:51:47 iteration: 69000 loss: 0.0028 lr: 0.02
+2023-02-10 11:40:55 Config:
+{'all_joints': [[0],
+                [1],
+                [2],
+                [3],
+                [4],
+                [5],
+                [6],
+                [7],
+                [8],
+                [9],
+                [10],
+                [11],
+                [12],
+                [13],
+                [14],
+                [15],
+                [16],
+                [17]],
+ 'all_joints_names': ['head',
+                      'trunk',
+                      'leftshoulder',
+                      'leftelbow',
+                      'leftwrist',
+                      'leftforefoot',
+                      'rightshoulder',
+                      'rightelbow',
+                      'rightwrist',
+                      'rightforefoot',
+                      'lefthip',
+                      'leftknee',
+                      'leftankle',
+                      'lefthindfoot',
+                      'righthip',
+                      'rightknee',
+                      'rightankle',
+                      'righthindfoot'],
+ 'alpha_r': 0.02,
+ 'apply_prob': 0.5,
+ 'batch_size': 1,
+ 'clahe': True,
+ 'claheratio': 0.1,
+ 'crop_pad': 0,
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_HyalineApr19\\Hyaline_KSwanson95shuffle1.mat',
+ 'dataset_type': 'imgaug',
+ 'decay_steps': 30000,
+ 'deterministic': False,
+ 'display_iters': 1000,
+ 'edge': False,
+ 'emboss': {'alpha': [0.0, 1.0], 'embossratio': 0.1, 'strength': [0.5, 1.5]},
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'histeq': True,
+ 'histeqratio': 0.1,
+ 'init_weights': 'C:\\Users\\Kyra\\anaconda3\\envs\\deeplabcut\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'lr_init': 0.0005,
+ 'max_input_size': 1500,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_HyalineApr19\\Documentation_data-Hyaline_95shuffle1.pickle',
+ 'min_input_size': 64,
+ 'mirror': False,
+ 'multi_stage': False,
+ 'multi_step': [[0.005, 10000],
+                [0.02, 430000],
+                [0.002, 730000],
+                [0.001, 1030000]],
+ 'net_type': 'resnet_50',
+ 'num_joints': 18,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': False,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'pos_dist_thresh': 17,
+ 'project_path': 'C:\\Users\\Kyra\\OneDrive\\Desktop\\Hyaline',
+ 'regularize': False,
+ 'rotation': 25,
+ 'rotratio': 0.4,
+ 'save_iters': 50000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'sharpen': False,
+ 'sharpenratio': 0.3,
+ 'shuffle': True,
+ 'snapshot_prefix': 'C:\\Users\\Kyra\\OneDrive\\Desktop\\Hyaline\\dlc-models\\iteration-0\\HyalineApr19-trainset95shuffle1\\train\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2023-02-10 11:44:13 iteration: 1000 loss: 0.0251 lr: 0.005
+2023-02-10 11:46:50 iteration: 2000 loss: 0.0143 lr: 0.005
+2023-02-27 18:15:41 Config:
+{'all_joints': [[0],
+                [1],
+                [2],
+                [3],
+                [4],
+                [5],
+                [6],
+                [7],
+                [8],
+                [9],
+                [10],
+                [11],
+                [12],
+                [13],
+                [14],
+                [15],
+                [16],
+                [17]],
+ 'all_joints_names': ['head',
+                      'trunk',
+                      'leftshoulder',
+                      'leftelbow',
+                      'leftwrist',
+                      'leftforefoot',
+                      'rightshoulder',
+                      'rightelbow',
+                      'rightwrist',
+                      'rightforefoot',
+                      'lefthip',
+                      'leftknee',
+                      'leftankle',
+                      'lefthindfoot',
+                      'righthip',
+                      'rightknee',
+                      'rightankle',
+                      'righthindfoot'],
+ 'alpha_r': 0.02,
+ 'apply_prob': 0.5,
+ 'batch_size': 1,
+ 'clahe': True,
+ 'claheratio': 0.1,
+ 'crop_pad': 0,
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_HyalineApr19\\Hyaline_KSwanson95shuffle1.mat',
+ 'dataset_type': 'imgaug',
+ 'decay_steps': 30000,
+ 'deterministic': False,
+ 'display_iters': 1000,
+ 'edge': False,
+ 'emboss': {'alpha': [0.0, 1.0], 'embossratio': 0.1, 'strength': [0.5, 1.5]},
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'histeq': True,
+ 'histeqratio': 0.1,
+ 'init_weights': 'C:\\Users\\Kyra\\anaconda3\\envs\\deeplabcut\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'lr_init': 0.0005,
+ 'max_input_size': 1500,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_HyalineApr19\\Documentation_data-Hyaline_95shuffle1.pickle',
+ 'min_input_size': 64,
+ 'mirror': False,
+ 'multi_stage': False,
+ 'multi_step': [[0.005, 10000],
+                [0.02, 430000],
+                [0.002, 730000],
+                [0.001, 1030000]],
+ 'net_type': 'resnet_50',
+ 'num_joints': 18,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': False,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'pos_dist_thresh': 17,
+ 'project_path': 'C:\\Users\\Kyra\\OneDrive\\Desktop\\Hyaline',
+ 'regularize': False,
+ 'rotation': 25,
+ 'rotratio': 0.4,
+ 'save_iters': 50000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'sharpen': False,
+ 'sharpenratio': 0.3,
+ 'shuffle': True,
+ 'snapshot_prefix': 'C:\\Users\\Kyra\\OneDrive\\Desktop\\Hyaline\\dlc-models\\iteration-0\\HyalineApr19-trainset95shuffle1\\train\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2023-02-27 18:18:35 iteration: 1000 loss: 0.0255 lr: 0.005
+2023-02-27 18:20:49 iteration: 2000 loss: 0.0158 lr: 0.005
+2023-02-27 18:23:01 iteration: 3000 loss: 0.0142 lr: 0.005
+2023-02-27 18:25:14 iteration: 4000 loss: 0.0132 lr: 0.005
+2023-02-27 18:27:26 iteration: 5000 loss: 0.0121 lr: 0.005
+2023-02-27 18:29:40 iteration: 6000 loss: 0.0117 lr: 0.005
+2023-02-27 18:31:53 iteration: 7000 loss: 0.0110 lr: 0.005
+2023-02-27 18:34:08 iteration: 8000 loss: 0.0105 lr: 0.005
+2023-02-27 18:36:25 iteration: 9000 loss: 0.0105 lr: 0.005
+2023-02-27 18:38:41 iteration: 10000 loss: 0.0098 lr: 0.005
+2023-02-27 18:40:57 iteration: 11000 loss: 0.0108 lr: 0.02
+2023-02-27 18:43:11 iteration: 12000 loss: 0.0099 lr: 0.02
+2023-02-27 18:45:27 iteration: 13000 loss: 0.0092 lr: 0.02
+2023-02-27 18:47:43 iteration: 14000 loss: 0.0084 lr: 0.02
+2023-02-27 18:49:59 iteration: 15000 loss: 0.0081 lr: 0.02
+2023-02-27 18:52:16 iteration: 16000 loss: 0.0079 lr: 0.02
+2023-02-27 18:54:34 iteration: 17000 loss: 0.0077 lr: 0.02
+2023-02-27 18:56:52 iteration: 18000 loss: 0.0074 lr: 0.02
+2023-02-27 18:59:06 iteration: 19000 loss: 0.0072 lr: 0.02
+2023-02-27 19:01:20 iteration: 20000 loss: 0.0068 lr: 0.02
+2023-02-27 19:03:38 iteration: 21000 loss: 0.0065 lr: 0.02
+2023-02-27 19:05:54 iteration: 22000 loss: 0.0066 lr: 0.02
+2023-02-27 19:08:12 iteration: 23000 loss: 0.0066 lr: 0.02
+2023-02-27 19:10:27 iteration: 24000 loss: 0.0062 lr: 0.02
+2023-02-27 19:12:41 iteration: 25000 loss: 0.0062 lr: 0.02
+2023-02-27 19:14:56 iteration: 26000 loss: 0.0060 lr: 0.02
+2023-02-28 17:50:22 iteration: 27000 loss: 0.0059 lr: 0.02
+2023-02-28 17:52:55 iteration: 28000 loss: 0.0057 lr: 0.02
+2023-02-28 17:55:28 iteration: 29000 loss: 0.0058 lr: 0.02
+2023-02-28 17:58:02 iteration: 30000 loss: 0.0057 lr: 0.02
+2023-02-28 18:00:35 iteration: 31000 loss: 0.0056 lr: 0.02
+2023-02-28 18:02:50 iteration: 32000 loss: 0.0057 lr: 0.02
+2023-02-28 18:05:05 iteration: 33000 loss: 0.0056 lr: 0.02
+2023-02-28 18:07:22 iteration: 34000 loss: 0.0054 lr: 0.02
+2023-02-28 18:09:47 iteration: 35000 loss: 0.0055 lr: 0.02
+2023-02-28 18:28:42 iteration: 36000 loss: 0.0053 lr: 0.02
+2023-02-28 18:32:23 iteration: 37000 loss: 0.0053 lr: 0.02
+2023-02-28 18:34:55 iteration: 38000 loss: 0.0060 lr: 0.02
+2023-02-28 18:37:28 iteration: 39000 loss: 0.0053 lr: 0.02
+2023-02-28 18:40:54 iteration: 40000 loss: 0.0051 lr: 0.02
+2023-02-28 18:43:20 iteration: 41000 loss: 0.0052 lr: 0.02
+2023-02-28 18:46:17 iteration: 42000 loss: 0.0049 lr: 0.02
+2023-02-28 18:48:45 iteration: 43000 loss: 0.0049 lr: 0.02
+2023-02-28 18:51:22 iteration: 44000 loss: 0.0049 lr: 0.02
+2023-02-28 18:54:19 iteration: 45000 loss: 0.0049 lr: 0.02
+2023-02-28 18:59:53 iteration: 46000 loss: 0.0049 lr: 0.02
+2023-02-28 19:03:03 iteration: 47000 loss: 0.0048 lr: 0.02
+2023-02-28 19:06:33 iteration: 48000 loss: 0.0046 lr: 0.02
+2023-02-28 19:09:04 iteration: 49000 loss: 0.0046 lr: 0.02
+2023-02-28 19:16:23 iteration: 50000 loss: 0.0046 lr: 0.02
+2023-02-28 19:18:56 iteration: 51000 loss: 0.0046 lr: 0.02
+2023-02-28 19:21:24 iteration: 52000 loss: 0.0044 lr: 0.02
+2023-02-28 19:24:01 iteration: 53000 loss: 0.0044 lr: 0.02
+2023-02-28 19:26:51 iteration: 54000 loss: 0.0043 lr: 0.02
+2023-02-28 19:29:49 iteration: 55000 loss: 0.0044 lr: 0.02
+2023-02-28 19:32:36 iteration: 56000 loss: 0.0045 lr: 0.02
+2023-02-28 19:35:24 iteration: 57000 loss: 0.0043 lr: 0.02
+2023-02-28 19:37:50 iteration: 58000 loss: 0.0043 lr: 0.02
+2023-02-28 19:40:14 iteration: 59000 loss: 0.0043 lr: 0.02
+2023-02-28 19:42:39 iteration: 60000 loss: 0.0043 lr: 0.02
+2023-02-28 19:45:17 iteration: 61000 loss: 0.0041 lr: 0.02
+2023-02-28 19:48:20 iteration: 62000 loss: 0.0041 lr: 0.02
+2023-02-28 19:50:51 iteration: 63000 loss: 0.0041 lr: 0.02
+2023-02-28 19:53:24 iteration: 64000 loss: 0.0042 lr: 0.02
+2023-02-28 19:56:12 iteration: 65000 loss: 0.0040 lr: 0.02
+2023-02-28 19:58:45 iteration: 66000 loss: 0.0042 lr: 0.02
+2023-02-28 20:01:45 iteration: 67000 loss: 0.0041 lr: 0.02
+2023-02-28 20:04:22 iteration: 68000 loss: 0.0041 lr: 0.02
+2023-02-28 20:06:54 iteration: 69000 loss: 0.0040 lr: 0.02
+2023-02-28 20:09:28 iteration: 70000 loss: 0.0040 lr: 0.02
+2023-02-28 20:12:01 iteration: 71000 loss: 0.0040 lr: 0.02
+2023-02-28 20:14:34 iteration: 72000 loss: 0.0040 lr: 0.02
+2023-02-28 20:17:06 iteration: 73000 loss: 0.0038 lr: 0.02
+2023-02-28 20:19:41 iteration: 74000 loss: 0.0040 lr: 0.02
+2023-02-28 20:22:09 iteration: 75000 loss: 0.0040 lr: 0.02
+2023-02-28 20:24:34 iteration: 76000 loss: 0.0039 lr: 0.02
+2023-02-28 20:26:57 iteration: 77000 loss: 0.0038 lr: 0.02
+2023-02-28 20:29:21 iteration: 78000 loss: 0.0038 lr: 0.02
+2023-02-28 20:31:46 iteration: 79000 loss: 0.0038 lr: 0.02
+2023-02-28 20:34:09 iteration: 80000 loss: 0.0038 lr: 0.02
+2023-02-28 20:36:32 iteration: 81000 loss: 0.0037 lr: 0.02
+2023-02-28 20:38:53 iteration: 82000 loss: 0.0037 lr: 0.02
+2023-02-28 20:41:17 iteration: 83000 loss: 0.0037 lr: 0.02
+2023-02-28 20:43:41 iteration: 84000 loss: 0.0037 lr: 0.02
+2023-02-28 20:46:06 iteration: 85000 loss: 0.0037 lr: 0.02
+2023-02-28 20:48:32 iteration: 86000 loss: 0.0037 lr: 0.02
+2023-02-28 20:50:54 iteration: 87000 loss: 0.0037 lr: 0.02
+2023-02-28 20:53:17 iteration: 88000 loss: 0.0037 lr: 0.02
+2023-02-28 20:55:42 iteration: 89000 loss: 0.0036 lr: 0.02
+2023-02-28 20:58:05 iteration: 90000 loss: 0.0036 lr: 0.02
+2023-02-28 21:00:29 iteration: 91000 loss: 0.0036 lr: 0.02
+2023-02-28 21:02:54 iteration: 92000 loss: 0.0036 lr: 0.02
+2023-02-28 21:05:17 iteration: 93000 loss: 0.0036 lr: 0.02
+2023-02-28 21:07:40 iteration: 94000 loss: 0.0035 lr: 0.02
+2023-02-28 21:10:02 iteration: 95000 loss: 0.0035 lr: 0.02
+2023-02-28 21:12:24 iteration: 96000 loss: 0.0036 lr: 0.02
+2023-02-28 21:14:49 iteration: 97000 loss: 0.0035 lr: 0.02
+2023-02-28 21:17:13 iteration: 98000 loss: 0.0035 lr: 0.02
+2023-02-28 21:19:37 iteration: 99000 loss: 0.0034 lr: 0.02
+2023-02-28 21:22:01 iteration: 100000 loss: 0.0034 lr: 0.02
+2023-03-03 11:08:32 Config:
+{'all_joints': [[0],
+                [1],
+                [2],
+                [3],
+                [4],
+                [5],
+                [6],
+                [7],
+                [8],
+                [9],
+                [10],
+                [11],
+                [12],
+                [13],
+                [14],
+                [15],
+                [16],
+                [17]],
+ 'all_joints_names': ['head',
+                      'trunk',
+                      'leftshoulder',
+                      'leftelbow',
+                      'leftwrist',
+                      'leftforefoot',
+                      'rightshoulder',
+                      'rightelbow',
+                      'rightwrist',
+                      'rightforefoot',
+                      'lefthip',
+                      'leftknee',
+                      'leftankle',
+                      'lefthindfoot',
+                      'righthip',
+                      'rightknee',
+                      'rightankle',
+                      'righthindfoot'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_HyalineApr19\\Hyaline_KSwanson95shuffle1.mat',
+ 'dataset_type': 'imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\Users\\Kyra\\anaconda3\\envs\\deeplabcut\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'mirror': False,
+ 'net_type': 'resnet_50',
+ 'num_joints': 18,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'C:\\Users\\Kyra\\OneDrive\\Desktop\\Hyaline\\dlc-models\\iteration-0\\HyalineApr19-trainset95shuffle1\\test\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2023-03-06 10:36:35 Config:
+{'all_joints': [[0],
+                [1],
+                [2],
+                [3],
+                [4],
+                [5],
+                [6],
+                [7],
+                [8],
+                [9],
+                [10],
+                [11],
+                [12],
+                [13],
+                [14],
+                [15],
+                [16],
+                [17]],
+ 'all_joints_names': ['head',
+                      'trunk',
+                      'leftshoulder',
+                      'leftelbow',
+                      'leftwrist',
+                      'leftforefoot',
+                      'rightshoulder',
+                      'rightelbow',
+                      'rightwrist',
+                      'rightforefoot',
+                      'lefthip',
+                      'leftknee',
+                      'leftankle',
+                      'lefthindfoot',
+                      'righthip',
+                      'rightknee',
+                      'rightankle',
+                      'righthindfoot'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_HyalineApr19\\Hyaline_KSwanson95shuffle1.mat',
+ 'dataset_type': 'imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\Users\\Kyra\\anaconda3\\envs\\deeplabcut\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'mirror': False,
+ 'net_type': 'resnet_50',
+ 'num_joints': 18,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'C:\\Users\\Kyra\\OneDrive\\Desktop\\Hyaline\\dlc-models\\iteration-0\\HyalineApr19-trainset95shuffle1\\test\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2023-03-06 11:21:36 Config:
+{'all_joints': [[0],
+                [1],
+                [2],
+                [3],
+                [4],
+                [5],
+                [6],
+                [7],
+                [8],
+                [9],
+                [10],
+                [11],
+                [12],
+                [13],
+                [14],
+                [15],
+                [16],
+                [17]],
+ 'all_joints_names': ['head',
+                      'trunk',
+                      'leftshoulder',
+                      'leftelbow',
+                      'leftwrist',
+                      'leftforefoot',
+                      'rightshoulder',
+                      'rightelbow',
+                      'rightwrist',
+                      'rightforefoot',
+                      'lefthip',
+                      'leftknee',
+                      'leftankle',
+                      'lefthindfoot',
+                      'righthip',
+                      'rightknee',
+                      'rightankle',
+                      'righthindfoot'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_HyalineApr19\\Hyaline_KSwanson95shuffle1.mat',
+ 'dataset_type': 'imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\Users\\Kyra\\anaconda3\\envs\\deeplabcut\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'mirror': False,
+ 'net_type': 'resnet_50',
+ 'num_joints': 18,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'C:\\Users\\Kyra\\OneDrive\\Desktop\\Hyaline\\dlc-models\\iteration-0\\HyalineApr19-trainset95shuffle1\\test\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2023-03-06 11:39:00 Config:
+{'all_joints': [[0],
+                [1],
+                [2],
+                [3],
+                [4],
+                [5],
+                [6],
+                [7],
+                [8],
+                [9],
+                [10],
+                [11],
+                [12],
+                [13],
+                [14],
+                [15],
+                [16],
+                [17]],
+ 'all_joints_names': ['head',
+                      'trunk',
+                      'leftshoulder',
+                      'leftelbow',
+                      'leftwrist',
+                      'leftforefoot',
+                      'rightshoulder',
+                      'rightelbow',
+                      'rightwrist',
+                      'rightforefoot',
+                      'lefthip',
+                      'leftknee',
+                      'leftankle',
+                      'lefthindfoot',
+                      'righthip',
+                      'rightknee',
+                      'rightankle',
+                      'righthindfoot'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_HyalineApr19\\Hyaline_KSwanson95shuffle1.mat',
+ 'dataset_type': 'imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\Users\\Kyra\\anaconda3\\envs\\deeplabcut\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'mirror': False,
+ 'net_type': 'resnet_50',
+ 'num_joints': 18,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'C:\\Users\\Kyra\\OneDrive\\Desktop\\Hyaline\\dlc-models\\iteration-0\\HyalineApr19-trainset95shuffle1\\test\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2023-03-06 11:46:02 Config:
+{'all_joints': [[0],
+                [1],
+                [2],
+                [3],
+                [4],
+                [5],
+                [6],
+                [7],
+                [8],
+                [9],
+                [10],
+                [11],
+                [12],
+                [13],
+                [14],
+                [15],
+                [16],
+                [17]],
+ 'all_joints_names': ['head',
+                      'trunk',
+                      'leftshoulder',
+                      'leftelbow',
+                      'leftwrist',
+                      'leftforefoot',
+                      'rightshoulder',
+                      'rightelbow',
+                      'rightwrist',
+                      'rightforefoot',
+                      'lefthip',
+                      'leftknee',
+                      'leftankle',
+                      'lefthindfoot',
+                      'righthip',
+                      'rightknee',
+                      'rightankle',
+                      'righthindfoot'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_HyalineApr19\\Hyaline_KSwanson95shuffle1.mat',
+ 'dataset_type': 'imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\Users\\Kyra\\anaconda3\\envs\\deeplabcut\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'mirror': False,
+ 'net_type': 'resnet_50',
+ 'num_joints': 18,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'C:\\Users\\Kyra\\OneDrive\\Desktop\\Hyaline\\dlc-models\\iteration-0\\HyalineApr19-trainset95shuffle1\\test\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2023-03-06 12:53:19 Config:
+{'all_joints': [[0],
+                [1],
+                [2],
+                [3],
+                [4],
+                [5],
+                [6],
+                [7],
+                [8],
+                [9],
+                [10],
+                [11],
+                [12],
+                [13],
+                [14],
+                [15],
+                [16],
+                [17]],
+ 'all_joints_names': ['head',
+                      'trunk',
+                      'leftshoulder',
+                      'leftelbow',
+                      'leftwrist',
+                      'leftforefoot',
+                      'rightshoulder',
+                      'rightelbow',
+                      'rightwrist',
+                      'rightforefoot',
+                      'lefthip',
+                      'leftknee',
+                      'leftankle',
+                      'lefthindfoot',
+                      'righthip',
+                      'rightknee',
+                      'rightankle',
+                      'righthindfoot'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_HyalineApr19\\Hyaline_KSwanson95shuffle1.mat',
+ 'dataset_type': 'imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\Users\\Kyra\\anaconda3\\envs\\deeplabcut\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'mirror': False,
+ 'net_type': 'resnet_50',
+ 'num_joints': 18,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'C:\\Users\\Kyra\\OneDrive\\Desktop\\Hyaline\\dlc-models\\iteration-0\\HyalineApr19-trainset95shuffle1\\test\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2023-04-18 08:46:10 Config:
+{'all_joints': [[0],
+                [1],
+                [2],
+                [3],
+                [4],
+                [5],
+                [6],
+                [7],
+                [8],
+                [9],
+                [10],
+                [11],
+                [12],
+                [13],
+                [14],
+                [15],
+                [16],
+                [17]],
+ 'all_joints_names': ['head',
+                      'trunk',
+                      'leftshoulder',
+                      'leftelbow',
+                      'leftwrist',
+                      'leftforefoot',
+                      'rightshoulder',
+                      'rightelbow',
+                      'rightwrist',
+                      'rightforefoot',
+                      'lefthip',
+                      'leftknee',
+                      'leftankle',
+                      'lefthindfoot',
+                      'righthip',
+                      'rightknee',
+                      'rightankle',
+                      'righthindfoot'],
+ 'alpha_r': 0.02,
+ 'apply_prob': 0.5,
+ 'batch_size': 1,
+ 'clahe': True,
+ 'claheratio': 0.1,
+ 'crop_pad': 0,
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_HyalineApr19\\Hyaline_KSwanson95shuffle1.mat',
+ 'dataset_type': 'imgaug',
+ 'decay_steps': 30000,
+ 'deterministic': False,
+ 'display_iters': 1000,
+ 'edge': False,
+ 'emboss': {'alpha': [0.0, 1.0], 'embossratio': 0.1, 'strength': [0.5, 1.5]},
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'histeq': True,
+ 'histeqratio': 0.1,
+ 'init_weights': 'C:\\Users\\Kyra\\anaconda3\\envs\\deeplabcut\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'lr_init': 0.0005,
+ 'max_input_size': 1500,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_HyalineApr19\\Documentation_data-Hyaline_95shuffle1.pickle',
+ 'min_input_size': 64,
+ 'mirror': False,
+ 'multi_stage': False,
+ 'multi_step': [[0.005, 10000],
+                [0.02, 430000],
+                [0.002, 730000],
+                [0.001, 1030000]],
+ 'net_type': 'resnet_50',
+ 'num_joints': 18,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': False,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'pos_dist_thresh': 17,
+ 'project_path': 'C:\\Users\\Kyra\\OneDrive\\Desktop\\Hyaline',
+ 'regularize': False,
+ 'rotation': 25,
+ 'rotratio': 0.4,
+ 'save_iters': 50000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'sharpen': False,
+ 'sharpenratio': 0.3,
+ 'shuffle': True,
+ 'snapshot_prefix': 'C:\\Users\\Kyra\\OneDrive\\Desktop\\Hyaline\\dlc-models\\iteration-0\\HyalineApr19-trainset95shuffle1\\train\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2023-04-18 08:49:21 iteration: 1000 loss: 0.0261 lr: 0.005
+2023-04-18 08:51:55 iteration: 2000 loss: 0.0165 lr: 0.005
+2023-04-18 08:54:30 iteration: 3000 loss: 0.0143 lr: 0.005
+2023-04-18 08:57:06 iteration: 4000 loss: 0.0134 lr: 0.005
+2023-04-18 08:59:43 iteration: 5000 loss: 0.0127 lr: 0.005
+2023-04-18 09:02:22 iteration: 6000 loss: 0.0119 lr: 0.005
+2023-04-18 09:04:59 iteration: 7000 loss: 0.0113 lr: 0.005
+2023-04-18 09:07:36 iteration: 8000 loss: 0.0109 lr: 0.005
+2023-04-18 09:10:12 iteration: 9000 loss: 0.0106 lr: 0.005
+2023-04-18 09:12:49 iteration: 10000 loss: 0.0103 lr: 0.005
+2023-04-18 09:15:15 iteration: 11000 loss: 0.0110 lr: 0.02
+2023-04-18 09:17:46 iteration: 12000 loss: 0.0101 lr: 0.02
+2023-04-18 09:20:12 iteration: 13000 loss: 0.0093 lr: 0.02
+2023-04-18 09:22:39 iteration: 14000 loss: 0.0088 lr: 0.02
+2023-04-18 09:25:04 iteration: 15000 loss: 0.0081 lr: 0.02
+2023-04-18 09:27:31 iteration: 16000 loss: 0.0081 lr: 0.02
+2023-04-18 09:29:58 iteration: 17000 loss: 0.0079 lr: 0.02
+2023-04-18 09:32:24 iteration: 18000 loss: 0.0076 lr: 0.02
+2023-04-18 09:34:47 iteration: 19000 loss: 0.0073 lr: 0.02
+2023-04-18 09:37:10 iteration: 20000 loss: 0.0071 lr: 0.02
+2023-04-18 09:39:39 iteration: 21000 loss: 0.0067 lr: 0.02
+2023-04-18 09:42:04 iteration: 22000 loss: 0.0066 lr: 0.02
+2023-04-18 09:44:32 iteration: 23000 loss: 0.0066 lr: 0.02
+2023-04-18 09:47:00 iteration: 24000 loss: 0.0063 lr: 0.02
+2023-04-18 09:49:26 iteration: 25000 loss: 0.0062 lr: 0.02
+2023-04-18 09:51:54 iteration: 26000 loss: 0.0060 lr: 0.02
+2023-04-18 09:54:26 iteration: 27000 loss: 0.0061 lr: 0.02
+2023-04-18 09:57:05 iteration: 28000 loss: 0.0059 lr: 0.02
+2023-04-18 09:59:45 iteration: 29000 loss: 0.0060 lr: 0.02
+2023-04-18 10:02:22 iteration: 30000 loss: 0.0058 lr: 0.02
+2023-04-18 10:04:59 iteration: 31000 loss: 0.0058 lr: 0.02
+2023-04-18 10:07:35 iteration: 32000 loss: 0.0056 lr: 0.02
+2023-04-18 10:10:13 iteration: 33000 loss: 0.0055 lr: 0.02
+2023-04-18 10:12:50 iteration: 34000 loss: 0.0055 lr: 0.02
+2023-04-18 10:15:26 iteration: 35000 loss: 0.0054 lr: 0.02
+2023-04-18 10:18:04 iteration: 36000 loss: 0.0053 lr: 0.02
+2023-04-18 10:20:40 iteration: 37000 loss: 0.0053 lr: 0.02
+2023-04-18 10:23:17 iteration: 38000 loss: 0.0053 lr: 0.02
+2023-04-18 10:25:55 iteration: 39000 loss: 0.0051 lr: 0.02
+2023-04-18 10:28:31 iteration: 40000 loss: 0.0052 lr: 0.02
+2023-04-18 10:30:57 iteration: 41000 loss: 0.0050 lr: 0.02
+2023-04-18 10:33:23 iteration: 42000 loss: 0.0049 lr: 0.02
+2023-04-18 10:35:47 iteration: 43000 loss: 0.0049 lr: 0.02
+2023-04-18 10:38:11 iteration: 44000 loss: 0.0048 lr: 0.02
+2023-04-18 10:40:36 iteration: 45000 loss: 0.0049 lr: 0.02
+2023-04-18 10:43:03 iteration: 46000 loss: 0.0049 lr: 0.02
+2023-04-18 10:45:27 iteration: 47000 loss: 0.0048 lr: 0.02
+2023-04-18 10:47:55 iteration: 48000 loss: 0.0047 lr: 0.02
+2023-04-18 10:50:21 iteration: 49000 loss: 0.0046 lr: 0.02
+2023-04-18 10:52:48 iteration: 50000 loss: 0.0046 lr: 0.02
+2023-04-18 10:55:18 iteration: 51000 loss: 0.0046 lr: 0.02
+2023-04-18 10:57:45 iteration: 52000 loss: 0.0044 lr: 0.02
+2023-04-18 11:00:13 iteration: 53000 loss: 0.0045 lr: 0.02
+2023-04-18 11:02:40 iteration: 54000 loss: 0.0044 lr: 0.02
+2023-04-18 11:05:13 iteration: 55000 loss: 0.0044 lr: 0.02
+2023-04-18 11:07:49 iteration: 56000 loss: 0.0045 lr: 0.02
+2023-04-18 11:10:27 iteration: 57000 loss: 0.0044 lr: 0.02
+2023-04-18 11:13:06 iteration: 58000 loss: 0.0044 lr: 0.02
+2023-04-18 11:15:45 iteration: 59000 loss: 0.0043 lr: 0.02
+2023-04-18 11:18:23 iteration: 60000 loss: 0.0044 lr: 0.02
+2023-04-18 11:20:59 iteration: 61000 loss: 0.0042 lr: 0.02
+2023-04-18 11:23:38 iteration: 62000 loss: 0.0043 lr: 0.02
+2023-04-18 11:26:14 iteration: 63000 loss: 0.0041 lr: 0.02
+2023-04-18 11:28:53 iteration: 64000 loss: 0.0041 lr: 0.02
+2023-04-18 11:31:31 iteration: 65000 loss: 0.0041 lr: 0.02
+2023-04-18 11:34:08 iteration: 66000 loss: 0.0041 lr: 0.02
+2023-04-18 11:36:44 iteration: 67000 loss: 0.0040 lr: 0.02
+2023-04-18 11:39:20 iteration: 68000 loss: 0.0041 lr: 0.02
+2023-04-18 11:41:59 iteration: 69000 loss: 0.0041 lr: 0.02
+2023-04-18 11:44:36 iteration: 70000 loss: 0.0041 lr: 0.02
+2023-04-18 11:47:14 iteration: 71000 loss: 0.0040 lr: 0.02
+2023-04-18 11:49:53 iteration: 72000 loss: 0.0040 lr: 0.02
+2023-04-18 11:52:31 iteration: 73000 loss: 0.0039 lr: 0.02
+2023-04-18 11:55:11 iteration: 74000 loss: 0.0040 lr: 0.02
+2023-04-18 11:57:50 iteration: 75000 loss: 0.0040 lr: 0.02
+2023-04-18 12:00:28 iteration: 76000 loss: 0.0039 lr: 0.02
+2023-04-18 12:03:05 iteration: 77000 loss: 0.0038 lr: 0.02
+2023-04-18 12:05:42 iteration: 78000 loss: 0.0038 lr: 0.02
+2023-04-18 12:08:21 iteration: 79000 loss: 0.0039 lr: 0.02
+2023-04-18 12:11:00 iteration: 80000 loss: 0.0038 lr: 0.02
+2023-04-18 12:13:38 iteration: 81000 loss: 0.0037 lr: 0.02
+2023-04-18 12:16:11 iteration: 82000 loss: 0.0037 lr: 0.02
+2023-04-18 12:18:46 iteration: 83000 loss: 0.0037 lr: 0.02
+2023-04-18 12:21:22 iteration: 84000 loss: 0.0038 lr: 0.02
+2023-04-18 12:23:58 iteration: 85000 loss: 0.0037 lr: 0.02
+2023-04-18 12:26:36 iteration: 86000 loss: 0.0037 lr: 0.02
+2023-04-18 12:29:14 iteration: 87000 loss: 0.0037 lr: 0.02
+2023-04-18 12:31:53 iteration: 88000 loss: 0.0037 lr: 0.02
+2023-04-18 12:34:29 iteration: 89000 loss: 0.0037 lr: 0.02
+2023-04-18 12:37:04 iteration: 90000 loss: 0.0036 lr: 0.02
+2023-04-18 12:39:40 iteration: 91000 loss: 0.0036 lr: 0.02
+2023-04-18 12:42:15 iteration: 92000 loss: 0.0035 lr: 0.02
+2023-04-18 12:44:52 iteration: 93000 loss: 0.0036 lr: 0.02
+2023-04-18 12:47:29 iteration: 94000 loss: 0.0036 lr: 0.02
+2023-04-18 12:50:04 iteration: 95000 loss: 0.0035 lr: 0.02
+2023-04-18 12:52:41 iteration: 96000 loss: 0.0035 lr: 0.02
+2023-04-18 12:55:17 iteration: 97000 loss: 0.0035 lr: 0.02
+2023-04-18 12:57:55 iteration: 98000 loss: 0.0035 lr: 0.02
+2023-04-18 13:00:31 iteration: 99000 loss: 0.0035 lr: 0.02
+2023-04-18 13:03:09 iteration: 100000 loss: 0.0034 lr: 0.02
+2023-04-18 20:46:30 Config:
+{'all_joints': [[0],
+                [1],
+                [2],
+                [3],
+                [4],
+                [5],
+                [6],
+                [7],
+                [8],
+                [9],
+                [10],
+                [11],
+                [12],
+                [13],
+                [14],
+                [15],
+                [16],
+                [17]],
+ 'all_joints_names': ['head',
+                      'trunk',
+                      'leftshoulder',
+                      'leftelbow',
+                      'leftwrist',
+                      'leftforefoot',
+                      'rightshoulder',
+                      'rightelbow',
+                      'rightwrist',
+                      'rightforefoot',
+                      'lefthip',
+                      'leftknee',
+                      'leftankle',
+                      'lefthindfoot',
+                      'righthip',
+                      'rightknee',
+                      'rightankle',
+                      'righthindfoot'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_HyalineApr19\\Hyaline_KSwanson95shuffle1.mat',
+ 'dataset_type': 'imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\Users\\Kyra\\anaconda3\\envs\\deeplabcut\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'mirror': False,
+ 'net_type': 'resnet_50',
+ 'num_joints': 18,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'C:\\Users\\Kyra\\OneDrive\\Desktop\\Hyaline\\dlc-models\\iteration-0\\HyalineApr19-trainset95shuffle1\\test\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2023-04-18 21:18:29 Config:
+{'all_joints': [[0],
+                [1],
+                [2],
+                [3],
+                [4],
+                [5],
+                [6],
+                [7],
+                [8],
+                [9],
+                [10],
+                [11],
+                [12],
+                [13],
+                [14],
+                [15],
+                [16],
+                [17]],
+ 'all_joints_names': ['head',
+                      'trunk',
+                      'leftshoulder',
+                      'leftelbow',
+                      'leftwrist',
+                      'leftforefoot',
+                      'rightshoulder',
+                      'rightelbow',
+                      'rightwrist',
+                      'rightforefoot',
+                      'lefthip',
+                      'leftknee',
+                      'leftankle',
+                      'lefthindfoot',
+                      'righthip',
+                      'rightknee',
+                      'rightankle',
+                      'righthindfoot'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_HyalineApr19\\Hyaline_KSwanson95shuffle1.mat',
+ 'dataset_type': 'imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\Users\\Kyra\\anaconda3\\envs\\deeplabcut\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'mirror': False,
+ 'net_type': 'resnet_50',
+ 'num_joints': 18,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'C:\\Users\\Kyra\\OneDrive\\Desktop\\Hyaline\\dlc-models\\iteration-0\\HyalineApr19-trainset95shuffle1\\test\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2023-04-19 15:15:28 Config:
+{'all_joints': [[0],
+                [1],
+                [2],
+                [3],
+                [4],
+                [5],
+                [6],
+                [7],
+                [8],
+                [9],
+                [10],
+                [11],
+                [12],
+                [13],
+                [14],
+                [15],
+                [16],
+                [17]],
+ 'all_joints_names': ['head',
+                      'trunk',
+                      'leftshoulder',
+                      'leftelbow',
+                      'leftwrist',
+                      'leftforefoot',
+                      'rightshoulder',
+                      'rightelbow',
+                      'rightwrist',
+                      'rightforefoot',
+                      'lefthip',
+                      'leftknee',
+                      'leftankle',
+                      'lefthindfoot',
+                      'righthip',
+                      'rightknee',
+                      'rightankle',
+                      'righthindfoot'],
+ 'alpha_r': 0.02,
+ 'apply_prob': 0.5,
+ 'batch_size': 1,
+ 'clahe': True,
+ 'claheratio': 0.1,
+ 'crop_pad': 0,
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_HyalineApr19\\Hyaline_KSwanson95shuffle1.mat',
+ 'dataset_type': 'imgaug',
+ 'decay_steps': 30000,
+ 'deterministic': False,
+ 'display_iters': 1000,
+ 'edge': False,
+ 'emboss': {'alpha': [0.0, 1.0], 'embossratio': 0.1, 'strength': [0.5, 1.5]},
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'histeq': True,
+ 'histeqratio': 0.1,
+ 'init_weights': 'C:\\Users\\Kyra\\anaconda3\\envs\\deeplabcut\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'lr_init': 0.0005,
+ 'max_input_size': 1500,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_HyalineApr19\\Documentation_data-Hyaline_95shuffle1.pickle',
+ 'min_input_size': 64,
+ 'mirror': False,
+ 'multi_stage': False,
+ 'multi_step': [[0.005, 10000],
+                [0.02, 430000],
+                [0.002, 730000],
+                [0.001, 1030000]],
+ 'net_type': 'resnet_50',
+ 'num_joints': 18,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': False,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'pos_dist_thresh': 17,
+ 'project_path': 'C:\\Users\\Kyra\\OneDrive\\Desktop\\Hyaline',
+ 'regularize': False,
+ 'rotation': 25,
+ 'rotratio': 0.4,
+ 'save_iters': 50000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'sharpen': False,
+ 'sharpenratio': 0.3,
+ 'shuffle': True,
+ 'snapshot_prefix': 'C:\\Users\\Kyra\\OneDrive\\Desktop\\Hyaline\\dlc-models\\iteration-0\\HyalineApr19-trainset95shuffle1\\train\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2023-04-19 15:18:21 iteration: 1000 loss: 0.0255 lr: 0.005
+2023-04-19 15:20:50 iteration: 2000 loss: 0.0176 lr: 0.005
+2023-04-19 15:23:30 iteration: 3000 loss: 0.0158 lr: 0.005
+2023-04-19 15:26:10 iteration: 4000 loss: 0.0146 lr: 0.005
+2023-04-19 15:28:48 iteration: 5000 loss: 0.0132 lr: 0.005
+2023-04-19 15:31:27 iteration: 6000 loss: 0.0130 lr: 0.005
+2023-04-19 15:34:10 iteration: 7000 loss: 0.0128 lr: 0.005
+2023-04-19 15:36:50 iteration: 8000 loss: 0.0121 lr: 0.005
+2023-04-19 15:39:30 iteration: 9000 loss: 0.0114 lr: 0.005
+2023-04-19 15:42:09 iteration: 10000 loss: 0.0111 lr: 0.005
+2023-04-19 15:44:50 iteration: 11000 loss: 0.0119 lr: 0.02
+2023-04-19 15:47:29 iteration: 12000 loss: 0.0108 lr: 0.02
+2023-04-19 15:50:10 iteration: 13000 loss: 0.0097 lr: 0.02
+2023-04-19 15:52:53 iteration: 14000 loss: 0.0095 lr: 0.02
+2023-04-19 15:55:34 iteration: 15000 loss: 0.0092 lr: 0.02
+2023-04-19 15:58:17 iteration: 16000 loss: 0.0088 lr: 0.02
+2023-04-19 16:00:57 iteration: 17000 loss: 0.0084 lr: 0.02
+2023-04-19 16:03:38 iteration: 18000 loss: 0.0081 lr: 0.02
+2023-04-19 16:06:18 iteration: 19000 loss: 0.0078 lr: 0.02
+2023-04-19 16:09:00 iteration: 20000 loss: 0.0077 lr: 0.02
+2023-04-19 16:11:42 iteration: 21000 loss: 0.0076 lr: 0.02
+2023-04-19 16:14:21 iteration: 22000 loss: 0.0076 lr: 0.02
+2023-04-19 16:17:03 iteration: 23000 loss: 0.0072 lr: 0.02
+2023-04-19 16:19:42 iteration: 24000 loss: 0.0071 lr: 0.02
+2023-04-19 16:22:20 iteration: 25000 loss: 0.0069 lr: 0.02
+2023-04-19 16:25:01 iteration: 26000 loss: 0.0068 lr: 0.02
+2023-04-19 16:27:39 iteration: 27000 loss: 0.0066 lr: 0.02
+2023-04-19 16:30:21 iteration: 28000 loss: 0.0066 lr: 0.02
+2023-04-19 16:33:06 iteration: 29000 loss: 0.0066 lr: 0.02
+2023-04-19 16:35:50 iteration: 30000 loss: 0.0066 lr: 0.02
+2023-04-19 16:38:31 iteration: 31000 loss: 0.0065 lr: 0.02
+2023-04-19 16:41:11 iteration: 32000 loss: 0.0064 lr: 0.02
+2023-04-19 16:43:52 iteration: 33000 loss: 0.0062 lr: 0.02
+2023-04-19 16:46:32 iteration: 34000 loss: 0.0061 lr: 0.02
+2023-04-19 16:49:12 iteration: 35000 loss: 0.0059 lr: 0.02
+2023-04-19 16:51:54 iteration: 36000 loss: 0.0060 lr: 0.02
+2023-04-19 16:54:34 iteration: 37000 loss: 0.0060 lr: 0.02
+2023-04-19 16:57:08 iteration: 38000 loss: 0.0059 lr: 0.02
+2023-04-19 16:59:37 iteration: 39000 loss: 0.0057 lr: 0.02
+2023-04-19 17:02:05 iteration: 40000 loss: 0.0058 lr: 0.02
+2023-04-19 17:04:35 iteration: 41000 loss: 0.0058 lr: 0.02
+2023-04-19 17:07:02 iteration: 42000 loss: 0.0056 lr: 0.02
+2023-04-19 17:09:31 iteration: 43000 loss: 0.0056 lr: 0.02
+2023-04-19 17:12:00 iteration: 44000 loss: 0.0055 lr: 0.02
+2023-04-19 17:14:31 iteration: 45000 loss: 0.0057 lr: 0.02
+2023-04-19 17:17:01 iteration: 46000 loss: 0.0056 lr: 0.02
+2023-04-19 17:19:32 iteration: 47000 loss: 0.0055 lr: 0.02
+2023-04-19 17:22:03 iteration: 48000 loss: 0.0054 lr: 0.02
+2023-04-19 17:24:32 iteration: 49000 loss: 0.0053 lr: 0.02
+2023-04-19 17:27:13 iteration: 50000 loss: 0.0052 lr: 0.02
+2023-04-19 17:29:56 iteration: 51000 loss: 0.0053 lr: 0.02
+2023-04-19 17:32:38 iteration: 52000 loss: 0.0052 lr: 0.02
+2023-04-19 17:35:18 iteration: 53000 loss: 0.0053 lr: 0.02
+2023-04-19 17:37:57 iteration: 54000 loss: 0.0052 lr: 0.02
+2023-04-19 17:40:39 iteration: 55000 loss: 0.0053 lr: 0.02
+2023-04-19 17:43:19 iteration: 56000 loss: 0.0053 lr: 0.02
+2023-04-19 17:46:00 iteration: 57000 loss: 0.0049 lr: 0.02
+2023-04-19 17:48:41 iteration: 58000 loss: 0.0050 lr: 0.02
+2023-04-19 17:51:23 iteration: 59000 loss: 0.0052 lr: 0.02
+2023-04-19 17:54:07 iteration: 60000 loss: 0.0051 lr: 0.02
+2023-04-19 17:56:46 iteration: 61000 loss: 0.0049 lr: 0.02
+2023-04-19 17:59:15 iteration: 62000 loss: 0.0050 lr: 0.02
+2023-04-19 18:01:46 iteration: 63000 loss: 0.0048 lr: 0.02
+2023-04-19 18:04:16 iteration: 64000 loss: 0.0051 lr: 0.02
+2023-04-19 18:06:43 iteration: 65000 loss: 0.0047 lr: 0.02
+2023-04-19 18:09:14 iteration: 66000 loss: 0.0050 lr: 0.02
+2023-04-19 18:11:53 iteration: 67000 loss: 0.0050 lr: 0.02
+2023-04-19 18:14:23 iteration: 68000 loss: 0.0047 lr: 0.02
+2023-04-19 18:16:49 iteration: 69000 loss: 0.0047 lr: 0.02
+2023-04-19 18:19:27 iteration: 70000 loss: 0.0048 lr: 0.02
+2023-04-19 18:22:05 iteration: 71000 loss: 0.0047 lr: 0.02
+2023-04-19 18:24:43 iteration: 72000 loss: 0.0047 lr: 0.02
+2023-04-19 18:27:20 iteration: 73000 loss: 0.0046 lr: 0.02
+2023-04-19 18:29:53 iteration: 74000 loss: 0.0045 lr: 0.02
+2023-04-19 18:32:31 iteration: 75000 loss: 0.0047 lr: 0.02
+2023-04-19 18:35:14 iteration: 76000 loss: 0.0046 lr: 0.02
+2023-04-19 18:37:54 iteration: 77000 loss: 0.0046 lr: 0.02
+2023-04-19 18:40:34 iteration: 78000 loss: 0.0046 lr: 0.02
+2023-04-19 18:43:12 iteration: 79000 loss: 0.0045 lr: 0.02
+2023-04-19 18:45:51 iteration: 80000 loss: 0.0046 lr: 0.02
+2023-04-19 18:48:28 iteration: 81000 loss: 0.0044 lr: 0.02
+2023-04-19 18:51:07 iteration: 82000 loss: 0.0045 lr: 0.02
+2023-04-19 18:53:47 iteration: 83000 loss: 0.0046 lr: 0.02
+2023-04-19 18:56:25 iteration: 84000 loss: 0.0046 lr: 0.02
+2023-04-19 18:59:03 iteration: 85000 loss: 0.0044 lr: 0.02
+2023-04-19 19:01:41 iteration: 86000 loss: 0.0044 lr: 0.02
+2023-04-19 19:04:20 iteration: 87000 loss: 0.0044 lr: 0.02
+2023-04-19 19:07:01 iteration: 88000 loss: 0.0044 lr: 0.02
+2023-04-19 19:09:43 iteration: 89000 loss: 0.0043 lr: 0.02
+2023-04-19 19:12:20 iteration: 90000 loss: 0.0043 lr: 0.02
+2023-04-19 19:14:57 iteration: 91000 loss: 0.0044 lr: 0.02
+2023-04-19 19:17:34 iteration: 92000 loss: 0.0043 lr: 0.02
+2023-04-19 19:20:13 iteration: 93000 loss: 0.0043 lr: 0.02
+2023-04-19 19:22:53 iteration: 94000 loss: 0.0045 lr: 0.02
+2023-04-19 19:25:32 iteration: 95000 loss: 0.0043 lr: 0.02
+2023-04-19 19:28:10 iteration: 96000 loss: 0.0042 lr: 0.02
+2023-04-19 19:30:51 iteration: 97000 loss: 0.0043 lr: 0.02
+2023-04-19 19:33:31 iteration: 98000 loss: 0.0042 lr: 0.02
+2023-04-19 19:36:13 iteration: 99000 loss: 0.0043 lr: 0.02
+2023-04-19 19:38:53 iteration: 100000 loss: 0.0041 lr: 0.02
+2023-04-19 19:41:35 iteration: 101000 loss: 0.0042 lr: 0.02
+2023-04-19 19:44:15 iteration: 102000 loss: 0.0043 lr: 0.02
+2023-04-19 19:46:58 iteration: 103000 loss: 0.0042 lr: 0.02
+2023-04-19 19:49:39 iteration: 104000 loss: 0.0041 lr: 0.02
+2023-04-19 19:52:22 iteration: 105000 loss: 0.0042 lr: 0.02
+2023-04-19 19:55:03 iteration: 106000 loss: 0.0041 lr: 0.02
+2023-04-19 19:57:42 iteration: 107000 loss: 0.0041 lr: 0.02
+2023-04-19 20:00:22 iteration: 108000 loss: 0.0041 lr: 0.02
+2023-04-19 20:03:01 iteration: 109000 loss: 0.0042 lr: 0.02
+2023-04-19 20:05:39 iteration: 110000 loss: 0.0040 lr: 0.02
+2023-04-19 20:08:20 iteration: 111000 loss: 0.0041 lr: 0.02
+2023-04-19 20:11:00 iteration: 112000 loss: 0.0041 lr: 0.02
+2023-04-19 20:13:36 iteration: 113000 loss: 0.0040 lr: 0.02
+2023-04-19 20:16:10 iteration: 114000 loss: 0.0041 lr: 0.02
+2023-04-19 20:18:37 iteration: 115000 loss: 0.0040 lr: 0.02
+2023-04-19 20:21:04 iteration: 116000 loss: 0.0039 lr: 0.02
+2023-04-19 20:23:35 iteration: 117000 loss: 0.0040 lr: 0.02
+2023-04-19 20:26:00 iteration: 118000 loss: 0.0039 lr: 0.02
+2023-04-19 20:28:25 iteration: 119000 loss: 0.0043 lr: 0.02
+2023-04-19 20:30:51 iteration: 120000 loss: 0.0040 lr: 0.02
+2023-04-19 20:33:19 iteration: 121000 loss: 0.0039 lr: 0.02
+2023-04-19 20:35:47 iteration: 122000 loss: 0.0038 lr: 0.02
+2023-04-19 20:38:17 iteration: 123000 loss: 0.0039 lr: 0.02
+2023-04-19 20:40:45 iteration: 124000 loss: 0.0039 lr: 0.02
+2023-04-19 20:43:16 iteration: 125000 loss: 0.0039 lr: 0.02
+2023-04-19 20:45:46 iteration: 126000 loss: 0.0039 lr: 0.02
+2023-04-19 20:48:12 iteration: 127000 loss: 0.0039 lr: 0.02
+2023-04-19 20:50:44 iteration: 128000 loss: 0.0040 lr: 0.02
+2023-04-19 20:53:14 iteration: 129000 loss: 0.0040 lr: 0.02
+2023-04-19 20:55:45 iteration: 130000 loss: 0.0039 lr: 0.02
+2023-04-19 20:58:09 iteration: 131000 loss: 0.0038 lr: 0.02
+2023-04-19 21:00:33 iteration: 132000 loss: 0.0037 lr: 0.02
+2023-04-19 21:02:55 iteration: 133000 loss: 0.0038 lr: 0.02
+2023-04-19 21:05:17 iteration: 134000 loss: 0.0038 lr: 0.02
+2023-04-19 21:07:42 iteration: 135000 loss: 0.0039 lr: 0.02
+2023-04-19 21:10:04 iteration: 136000 loss: 0.0038 lr: 0.02
+2023-04-19 21:12:26 iteration: 137000 loss: 0.0038 lr: 0.02
+2023-04-19 21:14:52 iteration: 138000 loss: 0.0038 lr: 0.02
+2023-04-19 21:17:16 iteration: 139000 loss: 0.0038 lr: 0.02
+2023-04-19 21:19:39 iteration: 140000 loss: 0.0038 lr: 0.02
+2023-04-19 21:22:02 iteration: 141000 loss: 0.0038 lr: 0.02
+2023-04-19 21:24:25 iteration: 142000 loss: 0.0038 lr: 0.02
+2023-04-19 21:26:50 iteration: 143000 loss: 0.0037 lr: 0.02
+2023-04-19 21:29:16 iteration: 144000 loss: 0.0036 lr: 0.02
+2023-04-19 21:31:44 iteration: 145000 loss: 0.0038 lr: 0.02
+2023-04-19 21:34:09 iteration: 146000 loss: 0.0038 lr: 0.02
+2023-04-19 21:36:38 iteration: 147000 loss: 0.0036 lr: 0.02
+2023-04-19 21:39:02 iteration: 148000 loss: 0.0037 lr: 0.02
+2023-04-19 21:41:25 iteration: 149000 loss: 0.0036 lr: 0.02
+2023-04-19 21:43:46 iteration: 150000 loss: 0.0037 lr: 0.02
+2023-04-19 21:46:15 iteration: 151000 loss: 0.0036 lr: 0.02
+2023-04-19 21:48:41 iteration: 152000 loss: 0.0036 lr: 0.02
+2023-04-19 21:51:10 iteration: 153000 loss: 0.0037 lr: 0.02
+2023-04-19 21:53:40 iteration: 154000 loss: 0.0037 lr: 0.02
+2023-04-19 21:56:03 iteration: 155000 loss: 0.0036 lr: 0.02
+2023-04-19 21:58:28 iteration: 156000 loss: 0.0037 lr: 0.02
+2023-04-19 22:00:54 iteration: 157000 loss: 0.0036 lr: 0.02
+2023-04-19 22:03:21 iteration: 158000 loss: 0.0037 lr: 0.02
+2023-04-19 22:05:46 iteration: 159000 loss: 0.0037 lr: 0.02
+2023-04-19 22:08:13 iteration: 160000 loss: 0.0036 lr: 0.02
+2023-04-19 22:10:40 iteration: 161000 loss: 0.0035 lr: 0.02
+2023-04-19 22:13:09 iteration: 162000 loss: 0.0037 lr: 0.02
+2023-04-19 22:15:35 iteration: 163000 loss: 0.0035 lr: 0.02
+2023-04-19 22:18:05 iteration: 164000 loss: 0.0036 lr: 0.02
+2023-04-19 22:20:31 iteration: 165000 loss: 0.0036 lr: 0.02
+2023-04-19 22:22:57 iteration: 166000 loss: 0.0036 lr: 0.02
+2023-04-19 22:25:25 iteration: 167000 loss: 0.0036 lr: 0.02
+2023-04-19 22:27:51 iteration: 168000 loss: 0.0035 lr: 0.02
+2023-04-19 22:30:18 iteration: 169000 loss: 0.0036 lr: 0.02
+2023-04-19 22:32:45 iteration: 170000 loss: 0.0036 lr: 0.02
+2023-04-19 22:35:12 iteration: 171000 loss: 0.0035 lr: 0.02
+2023-04-19 22:37:40 iteration: 172000 loss: 0.0035 lr: 0.02
+2023-04-19 22:40:07 iteration: 173000 loss: 0.0035 lr: 0.02
+2023-04-19 22:42:36 iteration: 174000 loss: 0.0035 lr: 0.02
+2023-04-19 22:45:03 iteration: 175000 loss: 0.0034 lr: 0.02
+2023-04-19 22:47:31 iteration: 176000 loss: 0.0035 lr: 0.02
+2023-04-19 22:49:58 iteration: 177000 loss: 0.0035 lr: 0.02
+2023-04-19 22:52:27 iteration: 178000 loss: 0.0035 lr: 0.02
+2023-04-19 22:54:52 iteration: 179000 loss: 0.0035 lr: 0.02
+2023-04-19 22:57:23 iteration: 180000 loss: 0.0034 lr: 0.02
+2023-04-19 22:59:49 iteration: 181000 loss: 0.0034 lr: 0.02
+2023-04-19 23:02:15 iteration: 182000 loss: 0.0034 lr: 0.02
+2023-04-19 23:04:44 iteration: 183000 loss: 0.0033 lr: 0.02
+2023-04-19 23:07:13 iteration: 184000 loss: 0.0034 lr: 0.02
+2023-04-19 23:09:41 iteration: 185000 loss: 0.0034 lr: 0.02
+2023-04-19 23:12:19 iteration: 186000 loss: 0.0033 lr: 0.02
+2023-04-19 23:14:54 iteration: 187000 loss: 0.0033 lr: 0.02
+2023-04-19 23:17:22 iteration: 188000 loss: 0.0034 lr: 0.02
+2023-04-19 23:19:52 iteration: 189000 loss: 0.0034 lr: 0.02
+2023-04-19 23:22:22 iteration: 190000 loss: 0.0033 lr: 0.02
+2023-04-19 23:24:47 iteration: 191000 loss: 0.0033 lr: 0.02
+2023-04-19 23:27:16 iteration: 192000 loss: 0.0034 lr: 0.02
+2023-04-19 23:29:47 iteration: 193000 loss: 0.0034 lr: 0.02
+2023-04-19 23:32:15 iteration: 194000 loss: 0.0034 lr: 0.02
+2023-04-19 23:34:41 iteration: 195000 loss: 0.0033 lr: 0.02
+2023-04-19 23:37:10 iteration: 196000 loss: 0.0033 lr: 0.02
+2023-04-19 23:39:39 iteration: 197000 loss: 0.0033 lr: 0.02
+2023-04-19 23:42:10 iteration: 198000 loss: 0.0035 lr: 0.02
+2023-04-19 23:44:37 iteration: 199000 loss: 0.0033 lr: 0.02
+2023-04-19 23:47:05 iteration: 200000 loss: 0.0032 lr: 0.02
+2023-04-19 23:49:34 iteration: 201000 loss: 0.0033 lr: 0.02
+2023-04-19 23:52:05 iteration: 202000 loss: 0.0034 lr: 0.02
+2023-04-19 23:54:36 iteration: 203000 loss: 0.0033 lr: 0.02
+2023-04-19 23:57:06 iteration: 204000 loss: 0.0033 lr: 0.02
+2023-04-19 23:59:34 iteration: 205000 loss: 0.0034 lr: 0.02
+2023-04-20 00:02:06 iteration: 206000 loss: 0.0033 lr: 0.02
+2023-04-20 00:04:34 iteration: 207000 loss: 0.0033 lr: 0.02
+2023-04-20 00:07:02 iteration: 208000 loss: 0.0033 lr: 0.02
+2023-04-20 00:09:33 iteration: 209000 loss: 0.0033 lr: 0.02
+2023-04-20 00:12:00 iteration: 210000 loss: 0.0033 lr: 0.02
+2023-04-20 00:14:29 iteration: 211000 loss: 0.0033 lr: 0.02
+2023-04-20 00:17:00 iteration: 212000 loss: 0.0032 lr: 0.02
+2023-04-20 00:19:25 iteration: 213000 loss: 0.0032 lr: 0.02
+2023-04-20 00:21:52 iteration: 214000 loss: 0.0033 lr: 0.02
+2023-04-20 00:24:19 iteration: 215000 loss: 0.0032 lr: 0.02
+2023-04-20 00:26:56 iteration: 216000 loss: 0.0033 lr: 0.02
+2023-04-20 00:29:34 iteration: 217000 loss: 0.0032 lr: 0.02
+2023-04-20 00:32:14 iteration: 218000 loss: 0.0032 lr: 0.02
+2023-04-20 00:34:55 iteration: 219000 loss: 0.0032 lr: 0.02
+2023-04-20 00:37:34 iteration: 220000 loss: 0.0032 lr: 0.02
+2023-04-20 00:40:15 iteration: 221000 loss: 0.0032 lr: 0.02
+2023-04-20 00:43:00 iteration: 222000 loss: 0.0032 lr: 0.02
+2023-04-20 00:45:40 iteration: 223000 loss: 0.0032 lr: 0.02
+2023-04-20 00:48:22 iteration: 224000 loss: 0.0032 lr: 0.02
+2023-04-20 00:51:03 iteration: 225000 loss: 0.0032 lr: 0.02
+2023-04-20 00:53:43 iteration: 226000 loss: 0.0031 lr: 0.02
+2023-04-20 00:56:26 iteration: 227000 loss: 0.0032 lr: 0.02
+2023-04-20 00:59:02 iteration: 228000 loss: 0.0032 lr: 0.02
+2023-04-20 01:01:39 iteration: 229000 loss: 0.0032 lr: 0.02
+2023-04-20 01:04:19 iteration: 230000 loss: 0.0032 lr: 0.02
+2023-04-20 01:07:00 iteration: 231000 loss: 0.0031 lr: 0.02
+2023-04-20 01:09:41 iteration: 232000 loss: 0.0031 lr: 0.02
+2023-04-20 01:12:20 iteration: 233000 loss: 0.0031 lr: 0.02
+2023-04-20 01:15:01 iteration: 234000 loss: 0.0030 lr: 0.02
+2023-04-20 01:17:38 iteration: 235000 loss: 0.0031 lr: 0.02
+2023-04-20 01:20:18 iteration: 236000 loss: 0.0032 lr: 0.02
+2023-04-20 01:22:59 iteration: 237000 loss: 0.0031 lr: 0.02
+2023-04-20 01:25:35 iteration: 238000 loss: 0.0030 lr: 0.02
+2023-04-20 01:28:16 iteration: 239000 loss: 0.0031 lr: 0.02
+2023-04-20 01:30:55 iteration: 240000 loss: 0.0031 lr: 0.02
+2023-04-20 01:33:36 iteration: 241000 loss: 0.0032 lr: 0.02
+2023-04-20 01:36:17 iteration: 242000 loss: 0.0031 lr: 0.02
+2023-04-20 01:38:57 iteration: 243000 loss: 0.0033 lr: 0.02
+2023-04-20 01:41:37 iteration: 244000 loss: 0.0032 lr: 0.02
+2023-04-20 01:44:17 iteration: 245000 loss: 0.0032 lr: 0.02
+2023-04-20 01:46:56 iteration: 246000 loss: 0.0030 lr: 0.02
+2023-04-20 01:49:36 iteration: 247000 loss: 0.0030 lr: 0.02
+2023-04-20 01:52:16 iteration: 248000 loss: 0.0030 lr: 0.02
+2023-04-20 01:54:56 iteration: 249000 loss: 0.0030 lr: 0.02
+2023-04-20 01:57:30 iteration: 250000 loss: 0.0030 lr: 0.02
+2023-04-20 01:59:56 iteration: 251000 loss: 0.0030 lr: 0.02
+2023-04-20 02:02:22 iteration: 252000 loss: 0.0030 lr: 0.02
+2023-04-20 02:04:48 iteration: 253000 loss: 0.0029 lr: 0.02
+2023-04-20 02:07:15 iteration: 254000 loss: 0.0030 lr: 0.02
+2023-04-20 02:09:42 iteration: 255000 loss: 0.0030 lr: 0.02
+2023-04-20 02:12:10 iteration: 256000 loss: 0.0030 lr: 0.02
+2023-04-20 02:14:39 iteration: 257000 loss: 0.0030 lr: 0.02
+2023-04-20 02:17:07 iteration: 258000 loss: 0.0030 lr: 0.02
+2023-04-20 02:19:35 iteration: 259000 loss: 0.0030 lr: 0.02
+2023-04-20 02:22:02 iteration: 260000 loss: 0.0030 lr: 0.02
+2023-04-20 02:24:30 iteration: 261000 loss: 0.0030 lr: 0.02
+2023-04-20 02:26:59 iteration: 262000 loss: 0.0029 lr: 0.02
+2023-04-20 02:29:30 iteration: 263000 loss: 0.0030 lr: 0.02
+2023-04-20 02:32:00 iteration: 264000 loss: 0.0030 lr: 0.02
+2023-04-20 02:34:27 iteration: 265000 loss: 0.0030 lr: 0.02
+2023-04-20 02:36:54 iteration: 266000 loss: 0.0030 lr: 0.02
+2023-04-20 02:39:22 iteration: 267000 loss: 0.0030 lr: 0.02
+2023-04-20 02:41:55 iteration: 268000 loss: 0.0031 lr: 0.02
+2023-04-20 02:44:25 iteration: 269000 loss: 0.0030 lr: 0.02
+2023-04-20 02:46:54 iteration: 270000 loss: 0.0029 lr: 0.02
+2023-04-20 02:49:22 iteration: 271000 loss: 0.0029 lr: 0.02
+2023-04-20 02:51:49 iteration: 272000 loss: 0.0030 lr: 0.02
+2023-04-20 02:54:17 iteration: 273000 loss: 0.0029 lr: 0.02
+2023-04-20 02:56:47 iteration: 274000 loss: 0.0029 lr: 0.02
+2023-04-20 02:59:18 iteration: 275000 loss: 0.0030 lr: 0.02
+2023-04-20 03:01:47 iteration: 276000 loss: 0.0030 lr: 0.02
+2023-04-20 03:04:15 iteration: 277000 loss: 0.0029 lr: 0.02
+2023-04-20 03:06:45 iteration: 278000 loss: 0.0029 lr: 0.02
+2023-04-20 03:09:12 iteration: 279000 loss: 0.0029 lr: 0.02
+2023-04-20 03:11:42 iteration: 280000 loss: 0.0029 lr: 0.02
+2023-04-20 03:14:11 iteration: 281000 loss: 0.0028 lr: 0.02
+2023-04-20 03:16:39 iteration: 282000 loss: 0.0029 lr: 0.02
+2023-04-20 03:19:10 iteration: 283000 loss: 0.0028 lr: 0.02
+2023-04-20 03:21:41 iteration: 284000 loss: 0.0029 lr: 0.02
+2023-04-20 03:24:11 iteration: 285000 loss: 0.0028 lr: 0.02
+2023-04-20 03:26:41 iteration: 286000 loss: 0.0029 lr: 0.02
+2023-04-20 03:29:15 iteration: 287000 loss: 0.0029 lr: 0.02
+2023-04-20 03:31:53 iteration: 288000 loss: 0.0028 lr: 0.02
+2023-04-20 03:34:21 iteration: 289000 loss: 0.0029 lr: 0.02
+2023-04-20 03:36:55 iteration: 290000 loss: 0.0029 lr: 0.02
+2023-04-20 03:39:30 iteration: 291000 loss: 0.0029 lr: 0.02
+2023-04-20 03:42:03 iteration: 292000 loss: 0.0029 lr: 0.02
+2023-04-20 03:44:35 iteration: 293000 loss: 0.0028 lr: 0.02
+2023-04-20 03:47:03 iteration: 294000 loss: 0.0029 lr: 0.02
+2023-04-20 03:49:31 iteration: 295000 loss: 0.0028 lr: 0.02
+2023-04-20 03:52:01 iteration: 296000 loss: 0.0030 lr: 0.02
+2023-04-20 03:54:31 iteration: 297000 loss: 0.0029 lr: 0.02
+2023-04-20 03:57:02 iteration: 298000 loss: 0.0028 lr: 0.02
+2023-04-20 03:59:38 iteration: 299000 loss: 0.0028 lr: 0.02
+2023-04-20 04:02:14 iteration: 300000 loss: 0.0029 lr: 0.02
+2023-04-20 04:04:50 iteration: 301000 loss: 0.0028 lr: 0.02
+2023-04-20 04:07:27 iteration: 302000 loss: 0.0029 lr: 0.02
+2023-04-20 04:10:08 iteration: 303000 loss: 0.0030 lr: 0.02
+2023-04-20 04:12:45 iteration: 304000 loss: 0.0028 lr: 0.02
+2023-04-20 04:15:25 iteration: 305000 loss: 0.0028 lr: 0.02
+2023-04-20 04:17:53 iteration: 306000 loss: 0.0028 lr: 0.02
+2023-04-20 04:20:23 iteration: 307000 loss: 0.0028 lr: 0.02
+2023-04-20 04:22:50 iteration: 308000 loss: 0.0028 lr: 0.02
+2023-04-20 04:25:20 iteration: 309000 loss: 0.0029 lr: 0.02
+2023-04-20 04:27:51 iteration: 310000 loss: 0.0029 lr: 0.02
+2023-04-20 04:30:23 iteration: 311000 loss: 0.0029 lr: 0.02
+2023-04-20 04:32:52 iteration: 312000 loss: 0.0027 lr: 0.02
+2023-04-20 04:35:22 iteration: 313000 loss: 0.0028 lr: 0.02
+2023-04-20 04:37:50 iteration: 314000 loss: 0.0029 lr: 0.02
+2023-04-20 04:40:20 iteration: 315000 loss: 0.0028 lr: 0.02
+2023-04-20 04:42:52 iteration: 316000 loss: 0.0028 lr: 0.02
+2023-04-20 04:45:20 iteration: 317000 loss: 0.0028 lr: 0.02
+2023-04-20 04:47:49 iteration: 318000 loss: 0.0028 lr: 0.02
+2023-04-20 04:50:19 iteration: 319000 loss: 0.0028 lr: 0.02
+2023-04-20 04:52:47 iteration: 320000 loss: 0.0028 lr: 0.02
+2023-04-20 04:55:16 iteration: 321000 loss: 0.0028 lr: 0.02
+2023-04-20 04:57:45 iteration: 322000 loss: 0.0027 lr: 0.02
+2023-04-20 05:00:15 iteration: 323000 loss: 0.0027 lr: 0.02
+2023-04-20 05:02:41 iteration: 324000 loss: 0.0027 lr: 0.02
+2023-04-20 05:05:08 iteration: 325000 loss: 0.0027 lr: 0.02
+2023-04-20 05:07:36 iteration: 326000 loss: 0.0028 lr: 0.02
+2023-04-20 05:10:06 iteration: 327000 loss: 0.0027 lr: 0.02
+2023-04-20 05:12:33 iteration: 328000 loss: 0.0027 lr: 0.02
+2023-04-20 05:15:00 iteration: 329000 loss: 0.0027 lr: 0.02
+2023-04-20 05:17:29 iteration: 330000 loss: 0.0027 lr: 0.02
+2023-04-20 05:19:57 iteration: 331000 loss: 0.0027 lr: 0.02
+2023-04-20 05:22:31 iteration: 332000 loss: 0.0027 lr: 0.02
+2023-04-20 05:24:57 iteration: 333000 loss: 0.0027 lr: 0.02
+2023-04-20 05:27:27 iteration: 334000 loss: 0.0028 lr: 0.02
+2023-04-20 05:29:57 iteration: 335000 loss: 0.0027 lr: 0.02
+2023-04-20 05:32:26 iteration: 336000 loss: 0.0027 lr: 0.02
+2023-04-20 05:34:52 iteration: 337000 loss: 0.0026 lr: 0.02
+2023-04-20 05:37:21 iteration: 338000 loss: 0.0027 lr: 0.02
+2023-04-20 05:39:52 iteration: 339000 loss: 0.0027 lr: 0.02
+2023-04-20 05:42:20 iteration: 340000 loss: 0.0027 lr: 0.02
+2023-04-20 05:44:48 iteration: 341000 loss: 0.0027 lr: 0.02
+2023-04-20 05:47:18 iteration: 342000 loss: 0.0027 lr: 0.02
+2023-04-20 05:49:49 iteration: 343000 loss: 0.0026 lr: 0.02
+2023-04-20 05:52:20 iteration: 344000 loss: 0.0028 lr: 0.02
+2023-04-20 05:54:48 iteration: 345000 loss: 0.0027 lr: 0.02
+2023-04-20 05:57:20 iteration: 346000 loss: 0.0027 lr: 0.02
+2023-04-20 05:59:49 iteration: 347000 loss: 0.0027 lr: 0.02
+2023-04-20 06:02:17 iteration: 348000 loss: 0.0027 lr: 0.02
+2023-04-20 06:04:43 iteration: 349000 loss: 0.0027 lr: 0.02
+2023-04-20 06:07:10 iteration: 350000 loss: 0.0026 lr: 0.02
+2023-04-20 06:09:38 iteration: 351000 loss: 0.0026 lr: 0.02
+2023-04-20 06:12:05 iteration: 352000 loss: 0.0027 lr: 0.02
+2023-04-20 06:14:34 iteration: 353000 loss: 0.0027 lr: 0.02
+2023-04-20 06:16:59 iteration: 354000 loss: 0.0026 lr: 0.02
+2023-04-20 06:19:37 iteration: 355000 loss: 0.0026 lr: 0.02
+2023-04-20 06:22:15 iteration: 356000 loss: 0.0026 lr: 0.02
+2023-04-20 06:24:52 iteration: 357000 loss: 0.0027 lr: 0.02
+2023-04-20 06:27:29 iteration: 358000 loss: 0.0027 lr: 0.02
+2023-04-20 06:30:06 iteration: 359000 loss: 0.0027 lr: 0.02
+2023-04-20 06:32:44 iteration: 360000 loss: 0.0027 lr: 0.02
+2023-04-20 06:35:21 iteration: 361000 loss: 0.0026 lr: 0.02
+2023-04-20 06:38:02 iteration: 362000 loss: 0.0027 lr: 0.02
+2023-04-20 06:40:40 iteration: 363000 loss: 0.0026 lr: 0.02
+2023-04-20 06:43:18 iteration: 364000 loss: 0.0027 lr: 0.02
+2023-04-20 06:45:54 iteration: 365000 loss: 0.0026 lr: 0.02
+2023-04-20 06:48:33 iteration: 366000 loss: 0.0026 lr: 0.02
+2023-04-20 06:51:13 iteration: 367000 loss: 0.0026 lr: 0.02
+2023-04-20 06:53:52 iteration: 368000 loss: 0.0026 lr: 0.02
+2023-04-20 06:56:31 iteration: 369000 loss: 0.0027 lr: 0.02
+2023-04-20 06:59:11 iteration: 370000 loss: 0.0027 lr: 0.02
+2023-04-20 07:01:48 iteration: 371000 loss: 0.0025 lr: 0.02
+2023-04-20 07:04:30 iteration: 372000 loss: 0.0027 lr: 0.02
+2023-04-20 07:07:07 iteration: 373000 loss: 0.0026 lr: 0.02
+2023-04-20 07:09:44 iteration: 374000 loss: 0.0025 lr: 0.02
+2023-04-20 07:12:22 iteration: 375000 loss: 0.0026 lr: 0.02
+2023-04-20 07:15:00 iteration: 376000 loss: 0.0025 lr: 0.02
+2023-04-20 07:17:39 iteration: 377000 loss: 0.0025 lr: 0.02
+2023-04-20 07:20:22 iteration: 378000 loss: 0.0027 lr: 0.02
+2023-04-20 07:23:05 iteration: 379000 loss: 0.0026 lr: 0.02
+2023-04-20 07:25:46 iteration: 380000 loss: 0.0027 lr: 0.02
+2023-04-20 07:28:25 iteration: 381000 loss: 0.0026 lr: 0.02
+2023-04-20 07:31:09 iteration: 382000 loss: 0.0026 lr: 0.02
+2023-04-20 07:33:49 iteration: 383000 loss: 0.0025 lr: 0.02
+2023-04-20 07:36:30 iteration: 384000 loss: 0.0026 lr: 0.02
+2023-04-20 07:39:14 iteration: 385000 loss: 0.0025 lr: 0.02
+2023-04-20 07:41:53 iteration: 386000 loss: 0.0026 lr: 0.02
+2023-04-20 07:44:30 iteration: 387000 loss: 0.0025 lr: 0.02
+2023-04-20 07:47:10 iteration: 388000 loss: 0.0026 lr: 0.02
+2023-04-20 07:49:52 iteration: 389000 loss: 0.0025 lr: 0.02
+2023-04-20 07:52:31 iteration: 390000 loss: 0.0025 lr: 0.02
+2023-04-20 07:55:11 iteration: 391000 loss: 0.0026 lr: 0.02
+2023-04-20 07:57:47 iteration: 392000 loss: 0.0026 lr: 0.02
+2023-04-20 08:00:14 iteration: 393000 loss: 0.0025 lr: 0.02
+2023-04-20 08:02:43 iteration: 394000 loss: 0.0025 lr: 0.02
+2023-04-20 08:05:19 iteration: 395000 loss: 0.0026 lr: 0.02
+2023-04-20 08:07:58 iteration: 396000 loss: 0.0025 lr: 0.02
+2023-04-20 08:10:34 iteration: 397000 loss: 0.0025 lr: 0.02
+2023-04-20 08:13:12 iteration: 398000 loss: 0.0025 lr: 0.02
+2023-04-20 08:15:50 iteration: 399000 loss: 0.0025 lr: 0.02
+2023-04-20 08:18:28 iteration: 400000 loss: 0.0026 lr: 0.02
+2023-04-20 08:21:08 iteration: 401000 loss: 0.0026 lr: 0.02
+2023-04-20 08:23:45 iteration: 402000 loss: 0.0025 lr: 0.02
+2023-04-20 08:26:14 iteration: 403000 loss: 0.0025 lr: 0.02
+2023-04-20 08:28:39 iteration: 404000 loss: 0.0026 lr: 0.02
+2023-04-20 08:31:04 iteration: 405000 loss: 0.0026 lr: 0.02
+2023-04-20 08:33:31 iteration: 406000 loss: 0.0026 lr: 0.02
+2023-04-20 08:35:53 iteration: 407000 loss: 0.0026 lr: 0.02
+2023-04-20 08:38:18 iteration: 408000 loss: 0.0025 lr: 0.02
+2023-04-20 08:40:41 iteration: 409000 loss: 0.0026 lr: 0.02
+2023-04-20 08:43:06 iteration: 410000 loss: 0.0025 lr: 0.02
+2023-04-20 08:45:31 iteration: 411000 loss: 0.0026 lr: 0.02
+2023-04-20 08:47:58 iteration: 412000 loss: 0.0025 lr: 0.02
+2023-04-20 08:50:23 iteration: 413000 loss: 0.0025 lr: 0.02
+2023-04-20 08:52:49 iteration: 414000 loss: 0.0026 lr: 0.02
+2023-04-20 08:55:14 iteration: 415000 loss: 0.0025 lr: 0.02
+2023-04-20 08:57:37 iteration: 416000 loss: 0.0025 lr: 0.02
+2023-04-20 08:59:54 iteration: 417000 loss: 0.0025 lr: 0.02
+2023-04-20 09:02:12 iteration: 418000 loss: 0.0026 lr: 0.02
+2023-04-20 09:04:29 iteration: 419000 loss: 0.0025 lr: 0.02
+2023-04-20 09:06:49 iteration: 420000 loss: 0.0025 lr: 0.02
+2023-04-20 09:09:08 iteration: 421000 loss: 0.0025 lr: 0.02
+2023-04-20 09:11:31 iteration: 422000 loss: 0.0025 lr: 0.02
+2023-04-20 09:13:50 iteration: 423000 loss: 0.0025 lr: 0.02
+2023-04-20 09:16:08 iteration: 424000 loss: 0.0025 lr: 0.02
+2023-04-20 09:18:29 iteration: 425000 loss: 0.0025 lr: 0.02
+2023-04-20 09:20:45 iteration: 426000 loss: 0.0024 lr: 0.02
+2023-04-20 09:23:02 iteration: 427000 loss: 0.0024 lr: 0.02
+2023-04-20 09:25:19 iteration: 428000 loss: 0.0025 lr: 0.02
+2023-04-20 09:27:39 iteration: 429000 loss: 0.0025 lr: 0.02
+2023-04-20 09:29:59 iteration: 430000 loss: 0.0025 lr: 0.02
+2023-04-20 09:32:17 iteration: 431000 loss: 0.0023 lr: 0.002
+2023-04-20 09:34:34 iteration: 432000 loss: 0.0023 lr: 0.002
+2023-04-20 09:36:56 iteration: 433000 loss: 0.0023 lr: 0.002
+2023-04-20 09:39:16 iteration: 434000 loss: 0.0021 lr: 0.002
+2023-04-20 09:41:34 iteration: 435000 loss: 0.0022 lr: 0.002
+2023-04-20 09:43:55 iteration: 436000 loss: 0.0022 lr: 0.002
+2023-04-20 09:46:16 iteration: 437000 loss: 0.0022 lr: 0.002
+2023-04-20 09:48:35 iteration: 438000 loss: 0.0022 lr: 0.002
+2023-04-20 09:50:57 iteration: 439000 loss: 0.0023 lr: 0.002
+2023-04-20 09:53:17 iteration: 440000 loss: 0.0022 lr: 0.002
+2023-04-20 09:55:40 iteration: 441000 loss: 0.0022 lr: 0.002
+2023-04-20 09:58:00 iteration: 442000 loss: 0.0022 lr: 0.002
+2023-04-20 10:00:20 iteration: 443000 loss: 0.0021 lr: 0.002
+2023-04-20 10:02:43 iteration: 444000 loss: 0.0022 lr: 0.002
+2023-04-20 10:05:03 iteration: 445000 loss: 0.0022 lr: 0.002
+2023-04-20 10:07:24 iteration: 446000 loss: 0.0022 lr: 0.002
+2023-04-20 10:09:44 iteration: 447000 loss: 0.0021 lr: 0.002
+2023-04-20 10:12:06 iteration: 448000 loss: 0.0022 lr: 0.002
+2023-04-20 10:14:27 iteration: 449000 loss: 0.0022 lr: 0.002
+2023-04-20 10:16:50 iteration: 450000 loss: 0.0022 lr: 0.002
+2023-04-20 10:19:14 iteration: 451000 loss: 0.0021 lr: 0.002
+2023-04-20 10:21:36 iteration: 452000 loss: 0.0022 lr: 0.002
+2023-04-20 10:23:58 iteration: 453000 loss: 0.0022 lr: 0.002
+2023-04-20 10:26:20 iteration: 454000 loss: 0.0022 lr: 0.002
+2023-04-20 10:28:42 iteration: 455000 loss: 0.0021 lr: 0.002
+2023-04-20 10:31:05 iteration: 456000 loss: 0.0021 lr: 0.002
+2023-04-20 10:33:29 iteration: 457000 loss: 0.0022 lr: 0.002
+2023-04-20 10:35:50 iteration: 458000 loss: 0.0022 lr: 0.002
+2023-04-20 10:38:14 iteration: 459000 loss: 0.0021 lr: 0.002
+2023-04-20 10:40:39 iteration: 460000 loss: 0.0022 lr: 0.002
+2023-04-20 10:43:01 iteration: 461000 loss: 0.0021 lr: 0.002
+2023-04-20 10:45:26 iteration: 462000 loss: 0.0022 lr: 0.002
+2023-04-20 10:47:49 iteration: 463000 loss: 0.0022 lr: 0.002
+2023-04-20 10:50:14 iteration: 464000 loss: 0.0022 lr: 0.002
+2023-04-20 10:52:38 iteration: 465000 loss: 0.0021 lr: 0.002
+2023-04-20 10:55:04 iteration: 466000 loss: 0.0022 lr: 0.002
+2023-04-20 10:57:28 iteration: 467000 loss: 0.0022 lr: 0.002
+2023-04-20 10:59:52 iteration: 468000 loss: 0.0021 lr: 0.002
+2023-04-20 11:02:18 iteration: 469000 loss: 0.0022 lr: 0.002
+2023-04-20 11:04:41 iteration: 470000 loss: 0.0021 lr: 0.002
+2023-04-20 11:07:08 iteration: 471000 loss: 0.0022 lr: 0.002
+2023-04-20 11:09:31 iteration: 472000 loss: 0.0022 lr: 0.002
+2023-04-20 11:11:53 iteration: 473000 loss: 0.0021 lr: 0.002
+2023-04-20 11:14:17 iteration: 474000 loss: 0.0021 lr: 0.002
+2023-04-20 11:16:41 iteration: 475000 loss: 0.0021 lr: 0.002
+2023-04-20 11:19:06 iteration: 476000 loss: 0.0021 lr: 0.002
+2023-04-20 11:21:35 iteration: 477000 loss: 0.0022 lr: 0.002
+2023-04-20 11:23:58 iteration: 478000 loss: 0.0021 lr: 0.002
+2023-04-20 11:26:21 iteration: 479000 loss: 0.0021 lr: 0.002
+2023-04-20 11:28:47 iteration: 480000 loss: 0.0021 lr: 0.002
+2023-04-20 11:31:13 iteration: 481000 loss: 0.0021 lr: 0.002
+2023-04-20 11:33:39 iteration: 482000 loss: 0.0022 lr: 0.002
+2023-04-20 11:36:05 iteration: 483000 loss: 0.0021 lr: 0.002
+2023-04-20 11:38:31 iteration: 484000 loss: 0.0021 lr: 0.002
+2023-04-20 11:40:56 iteration: 485000 loss: 0.0021 lr: 0.002
+2023-04-20 11:43:20 iteration: 486000 loss: 0.0020 lr: 0.002
+2023-04-20 11:45:45 iteration: 487000 loss: 0.0021 lr: 0.002
+2023-04-20 11:48:10 iteration: 488000 loss: 0.0021 lr: 0.002
+2023-04-20 11:50:33 iteration: 489000 loss: 0.0021 lr: 0.002
+2023-04-20 11:53:00 iteration: 490000 loss: 0.0021 lr: 0.002
+2023-04-20 11:55:29 iteration: 491000 loss: 0.0021 lr: 0.002
+2023-04-20 11:57:56 iteration: 492000 loss: 0.0022 lr: 0.002
+2023-04-20 12:00:21 iteration: 493000 loss: 0.0022 lr: 0.002
+2023-04-20 12:02:42 iteration: 494000 loss: 0.0020 lr: 0.002
+2023-04-20 12:05:05 iteration: 495000 loss: 0.0021 lr: 0.002
+2023-04-20 12:07:32 iteration: 496000 loss: 0.0021 lr: 0.002
+2023-04-20 12:09:59 iteration: 497000 loss: 0.0021 lr: 0.002
+2023-04-20 12:12:21 iteration: 498000 loss: 0.0021 lr: 0.002
+2023-04-20 12:14:45 iteration: 499000 loss: 0.0021 lr: 0.002
+2023-04-20 12:17:10 iteration: 500000 loss: 0.0021 lr: 0.002
+2023-04-20 16:39:49 Config:
+{'all_joints': [[0],
+                [1],
+                [2],
+                [3],
+                [4],
+                [5],
+                [6],
+                [7],
+                [8],
+                [9],
+                [10],
+                [11],
+                [12],
+                [13],
+                [14],
+                [15],
+                [16],
+                [17]],
+ 'all_joints_names': ['head',
+                      'trunk',
+                      'leftshoulder',
+                      'leftelbow',
+                      'leftwrist',
+                      'leftforefoot',
+                      'rightshoulder',
+                      'rightelbow',
+                      'rightwrist',
+                      'rightforefoot',
+                      'lefthip',
+                      'leftknee',
+                      'leftankle',
+                      'lefthindfoot',
+                      'righthip',
+                      'rightknee',
+                      'rightankle',
+                      'righthindfoot'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_HyalineApr19\\Hyaline_KSwanson95shuffle1.mat',
+ 'dataset_type': 'imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\Users\\Kyra\\anaconda3\\envs\\deeplabcut\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'mirror': False,
+ 'net_type': 'resnet_50',
+ 'num_joints': 18,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'C:\\Users\\Kyra\\OneDrive\\Desktop\\Hyaline\\dlc-models\\iteration-0\\HyalineApr19-trainset95shuffle1\\test\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
